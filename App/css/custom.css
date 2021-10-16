@@ -1,0 +1,56 @@
+.altezza-piena {
+  height: 100%;
+}
+
+.altezza-massima {
+    max-height:100%;
+    overflow-y:scroll;
+    -ms-overflow-style: none;
+}
+.altezza-massima::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-rosso{
+    background-color: #dc3545!important;
+}
+.bg-giallo{
+    background-color: #ffc107!important;
+}
+
+.bg-verde{
+    background-color: #28a745!important;
+}
+
+.verde{
+    color: #28a745!important;
+}
+
+.testo-scuro{
+    color: #2f3133!important;
+}
+
+.testo-blu{
+    color: #06c!important;
+}
+
+.alert-success{
+    background-image: none!important;
+}
+
+.alert-danger{
+    background-image: none!important;
+}
+
+.text-danger-rosso-solo{
+    color: #d9364f!important;
+}
+
+.text-arancione{
+    color: #ff9100!important;
+}
+
+.text-danger-rosso{
+    color: #d9364f!important;
+    font-size: .777rem!important;
+}
