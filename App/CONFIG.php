@@ -14,5 +14,5 @@ define("USERNAME_DATABASE","root");
 if(!defined("PASSWORD_DATABASE"))
 define("PASSWORD_DATABASE","");
 if(!defined("CHIAVE_DI_CIFRATURA"))
-define("CHIAVE_DI_CIFRATURA","fyMgziCGUc");
+define("CHIAVE_DI_CIFRATURA","CHIAVE_DI_CIFRATURA");
 ?>

@@ -125,7 +125,7 @@ if (!function_exists('effettuaAutenticazione')) {
                 $resultTwo = resultPreparedDue($conn,$sql,$email,$psw);
                 if ($resultTwo->num_rows > 0) {
                     while ($row = $resultTwo->fetch_assoc()) {
-                        if ($row["codice_ruolo"] == 0) {
+                        if ($row["codice_ruolo"] != 0) {
                             chiudiConnessione($conn);
                             return "Utente non abilitato ad accedere<br>a questa parte dell'applicativo!";
                         } else if ($row["isBloccato"]) {
