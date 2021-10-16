@@ -37,7 +37,7 @@ if(isset($_POST["valorePreso"],$_POST["idProdotto"])){
 
         <div class="row pt-5">
             <div class="col text-right" onclick="decrementaValore();">
-                <p id="segnettoMeno" class="h1 testo-blu">-</p>
+                <p id="segnettoMeno" class="h1 text-danger">-</p>
             </div>
             <div class="col text-center align-baseline">
                 <input type="hidden" id="valorePreso" name="valorePreso" value="1">
@@ -52,13 +52,13 @@ if(isset($_POST["valorePreso"],$_POST["idProdotto"])){
                 ?></span>/<span id="massimo"><?php echo $prodotto["totale_disposizione_militi"]; ?></span></p>
             </div>
             <div class="col text-left" onclick="incrementaValore();">
-                <p id="segnettoPiu" class="h1 testo-blu">+</p>
+                <p id="segnettoPiu" class="h1 text-danger">+</p>
             </div>
         </div>
 
         <div class="row pt-5">
             <div class="col text-center">
-                <small id="testoSegnalazione">La quantità massima non corrisponde? <strong><span class="testo-blu" style="user-select: none;" onclick="inviaSegnalazione();">Clicca qui!</span></strong></small>
+                <small id="testoSegnalazione">La quantità massima non corrisponde? <strong><span class="text-danger" style="user-select: none;" onclick="inviaSegnalazione();">Clicca qui!</span></strong></small>
             </div>
         </div>
 
@@ -87,10 +87,10 @@ if(isset($_POST["valorePreso"],$_POST["idProdotto"])){
                 document.getElementById("valorePreso").value = valoreAttuale + 1;
                 segnettoMeno = document.getElementById("segnettoMeno");
                 segnettoMeno.classList.remove("text-secondary");
-                segnettoMeno.classList.add("testo-blu");
+                segnettoMeno.classList.add("text-danger");
                 if (valoreMassimo - valoreAttuale == 1) {
                     segnettoPiu = document.getElementById("segnettoPiu");
-                    segnettoPiu.classList.remove("testo-blu");
+                    segnettoPiu.classList.remove("text-danger");
                     segnettoPiu.classList.add("text-secondary");
                 }
             }
@@ -104,10 +104,10 @@ if(isset($_POST["valorePreso"],$_POST["idProdotto"])){
                 document.getElementById("valorePreso").value = valoreAttuale - 1;
                 segnettoPiu = document.getElementById("segnettoPiu");
                 segnettoPiu.classList.remove("text-secondary");
-                segnettoPiu.classList.add("testo-blu");
+                segnettoPiu.classList.add("text-danger");
                 if (valoreAttuale == 1) {
                     segnettoMeno = document.getElementById("segnettoMeno");
-                    segnettoMeno.classList.remove("testo-blu");
+                    segnettoMeno.classList.remove("text-danger");
                     segnettoMeno.classList.add("text-secondary");
                 }
             }
@@ -140,7 +140,7 @@ if(isset($_POST["valorePreso"],$_POST["idProdotto"])){
     <?php include './common/footer.php'; ?>
 
     <div class="notification bottom-fix with-icon info" role="alert" aria-labelledby="not1e-title" id="notificaInviata">
-            <h5 id="not1e-title"><i class="fas fa-check testo-blu"></i> <span class="text-blu ">Notifica inviata!<span></h5>
+            <h5 id="not1e-title"><i class="fas fa-check text-danger"></i> <span class="text-secondary ">Notifica inviata!<span></h5>
         </div>
 
         <?php

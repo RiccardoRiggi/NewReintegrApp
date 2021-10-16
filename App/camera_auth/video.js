@@ -110,6 +110,7 @@ function scanBarcode() {
   if (ZXing == null) {
     buttonGo.disabled = false;
     alert("Lettore non ancora disponibile");
+    location.reload();
     return;
   }
 

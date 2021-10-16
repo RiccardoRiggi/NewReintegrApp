@@ -24,11 +24,11 @@
 
     function stampaIconaMezzo($tipo){
         if($tipo=="Ambulanza"){
-            return '<i class="fas fa-ambulance h1 testo-blu"></i>';
+            return '<i class="fas fa-ambulance h1 text-danger"></i>';
         }else if($tipo=="Automedica"){
-            return '<i class="fas fa-taxi h1 testo-blu"></i>';
+            return '<i class="fas fa-taxi h1 text-danger"></i>';
         }else{
-            return '<i class="fas fa-car h1 testo-blu"></i>';
+            return '<i class="fas fa-car h1 text-danger"></i>';
         }
     }
 

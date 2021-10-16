@@ -12,7 +12,7 @@
 </script>
 <link rel="stylesheet" href="../css/bootstrap-italia.min.css">
 <script src="../js/bootstrap-italia.bundle.min.js"></script>
-<meta name="theme-color" content="#0066CC">
+<meta name="theme-color" content="#e74a3b">
 
 <!-- FONTAWESOME -->
 <!-- CDN: <script src="https://kit.fontawesome.com/07e1cca567.js" crossorigin="anonymous"></script> -->

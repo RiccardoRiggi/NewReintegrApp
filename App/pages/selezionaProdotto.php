@@ -139,7 +139,7 @@ if (isset($_GET["mezzo_id"])) {
     }else if (isset($_GET["error"]) && $_GET["error"] == 200) {
         
         echo '<div class="notification bottom-fix with-icon info" role="alert" aria-labelledby="not1e-title" id="prodottoAggiunto">
-            <h5 id="not1e-title"><i class="fas fa-check testo-blu"></i> <span class="text-blu ">Salvataggio eseguito!<span></h5>
+            <h5 id="not1e-title"><i class="fas fa-check text-danger"></i> <span class="text-secondary ">Salvataggio eseguito!<span></h5>
             <p>Il movimento è stato registrato con successo.</p>
         </div>';
         echo "<script>notificationShow('prodottoAggiunto',4000);</script>";

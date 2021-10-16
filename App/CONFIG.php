@@ -1,6 +1,6 @@
 <?php
 if(!defined("NOME_ASSOCIAZIONE"))
-define("NOME_ASSOCIAZIONE","P.A. Nome Pubblica Assistenza");
+define("NOME_ASSOCIAZIONE","Croce Rossa Italiana - Comitato Val di Fassa");
 if(!defined("SOGLIA_PRODOTTI_IN_ESAURIMENTO"))
 define("SOGLIA_PRODOTTI_IN_ESAURIMENTO",10);
 if(!defined("IS_IN_PRODUZIONE"))

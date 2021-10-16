@@ -25,7 +25,7 @@ $_SESSION["reintegrazione_id"] = null;
 
             <div class="col text-center">
 
-                <i class="far fa-smile-wink h1 testo-blu"></i>
+                <i class="far fa-smile-wink h1 text-danger"></i>
 
             </div>
 

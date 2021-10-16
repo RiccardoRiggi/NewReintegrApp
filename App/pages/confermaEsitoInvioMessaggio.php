@@ -28,7 +28,7 @@ if (isset($_POST["contenuto"])) {
 
             <div class="col text-center">
 
-                <i class="fas fa-mail-bulk h1 testo-blu"></i>
+                <i class="fas fa-mail-bulk h1 text-danger"></i>
 
             </div>
 
