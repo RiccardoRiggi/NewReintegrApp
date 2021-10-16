@@ -87,9 +87,27 @@ if (!function_exists('registraNuovoIndirizzoIp')) {
     }
 }
 
+if (!function_exists('isAutorizzatoAllaPaginaCorrente')) {
+    function isAutorizzatoAllaPaginaCorrente()
+    {
+        include '../db_components/dbGestione.php';
+        $conn = apriConnessione();
+        $sql = "SELECT COUNT(*) as n FROM menu_voci_ruoli mvc, voci_menu vm where vm.url = ? AND vm.codice_padre = mvc.codice_menu and mvc.codice_ruolo = ? ";
+        $result = resultPreparedDue($conn,$sql,basename($_SERVER['PHP_SELF']),$_SESSION["codice_ruolo"]);
+        $row = $result->fetch_assoc();
+        if($row["n"]==0){
+            header('location: errore404.php');
+        }  
+    }
+}
+
 session_start();
 verificaIndirizzoIp();
 isAutenticato();
 isBloccato();
+if(basename($_SERVER['PHP_SELF'])!='errore404.php'){
+    isAutorizzatoAllaPaginaCorrente();
+}
+
 
 ?>

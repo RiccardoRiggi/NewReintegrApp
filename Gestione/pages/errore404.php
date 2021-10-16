@@ -24,7 +24,7 @@
                             </div>
                             <div class="col-6 p-2 text-right bg-white">
                                 <div class="btn-example">
-                                    <a href="index.php"><button type="button" class="btn btn-primary">
+                                    <a href="index.php"><button type="button" class="btn btn-danger">
                                         <i class="fas fa-home"></i> HomePage
                                         </button></a>
 

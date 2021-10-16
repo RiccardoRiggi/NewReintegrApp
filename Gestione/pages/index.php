@@ -33,6 +33,7 @@
                         <div class="col-6 ml-3 bg-white shadow alert">
                             <h4 class="pl-3 text-dark">Mezzi reintegrati negli ultimi 7 giorni</h4>
                             <canvas class=" mx-auto d-block" id="myChart" width="400" height="200"></canvas>
+                            <small class="text-muted text-center">Il grafico verrà generato dopo aver raccolto almeno 7 giorni di dati</small>
                         </div>
                         <div class="ml-5 col-5 bg-white shadow alert">
                             <h4 class="pl-3 text-dark">Classifica</h4>

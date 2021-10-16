@@ -32,7 +32,7 @@
         <!-- Nav Item - User Information -->
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="modificaUtente.php?id=<?php echo $_SESSION["utente_id"]; ?>" id="userDropdown">
-                <span class="text-secondary">Bentornato <?php echo $_SESSION["operatore"]; ?>!</span>
+                <span class="text-secondary">Ciao <?php echo $_SESSION["operatore"]; ?>!</span>
 
             </a>
 

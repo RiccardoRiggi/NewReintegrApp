@@ -30,7 +30,18 @@ INSERT INTO `voci_menu` (`voce_id`, `etichetta`, `icona`, `tooltip`, `codice_pad
 (27, 'Lista messaggi', 'fas fa-envelope', '', 26, 'listaMessaggi.php', 1),
 (28, 'Supporto tecnico', 'fas fa-cogs', '', 0, 'supporto', 1),
 (29, 'Crediti', 'fas fa-cogs', '', 28, 'crediti.php', 1),
-(30, 'Documentazione', 'fas fa-cogs', '', 28, 'https://github.com/RiccardoRiggi/NewReintegrApp', 1);
+(30, 'Documentazione', 'fas fa-cogs', '', 28, 'https://github.com/RiccardoRiggi/NewReintegrApp', 1),
+(31, 'Homepage', '', '', 28, 'index.php', 0),
+(32, 'Modifica Utente', '', '', 1, 'modificaUtente.php', 0),
+(33, 'Stampa Badge Singolo', '', '', 1, 'stampaBadgeAccessoSingolo.php', 0),
+(34, 'Stampa Badge Gruppo', '', '', 1, 'stampaBadgeAccessoDiGruppo.php', 0),
+(35, 'Modifica Veicolo', '', '', 6, 'modificaVeicolo.php', 0),
+(36, 'Modifica Zaino', '', '', 9, 'modificaZaino.php', 0),
+(37, 'Modifica Sacca', '', '', 12, 'modificaSacca.php', 0),
+(38, 'Stampa Etichetta', '', '', 15, 'stampaQrProdottiDiGruppo.php', 0),
+(39, 'Scheda Checklist', '', '', 19, 'schedaCheckList.php', 0),
+(40, 'Scheda Reintegro', '', '', 21, 'schedaReintegro.php', 0),
+(41, 'Lista Prodotti Strategica', '', '', 15, 'listaStrategica.php', 0);
 
 -- CREAZIONE UTENTE INIZIALE SUPERUSER CON LE SEGUENTI CREDENZIALI
 -- info@ghiroinformatico.net - Alice02
