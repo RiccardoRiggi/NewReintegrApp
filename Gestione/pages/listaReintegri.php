@@ -22,7 +22,7 @@
                         <div class="row ">
                             <div class="col-1"></div>
                             <div class="col-10 p-2 bg-white">
-                                <h4 class="pl-3 testo-scuro">Lista Reintegri</h4>
+                                <h4 class="pl-3 font-weight-bold">Lista Reintegri</h4>
                             </div>
                             <div class="col-1"></div> 
                         </div>
@@ -32,7 +32,7 @@
 
                         <div class="row pt-5">
                             <div class="col-1"></div>
-                            <div class="col-10 bg-white">
+                            <div class="col-10 bg-white p-3">
                                 <?php echo stampaListaReintegri(); ?>
                             </div>
                             <div class="col-1"></div>

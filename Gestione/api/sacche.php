@@ -163,10 +163,10 @@ function generaTabellaProdottiNellaSacca($codiceSacca){
                     <input type="text" class="form-control dataScadenza" id="dataScad'.$row["id_pns"].'" placeholder="MM/AAAA" value="'.$row["data_scadenza"].'">
                 </div>
             </td>
-            <td class="text-center"><button type="button" class="btn btn-primary" onclick="aggiornaProdottoNellaSacca('.stampaQuantitaInserita($row["isConvalidato"],$row["quantita_attuale"]).','.$row["id_pns"].','.$codiceSacca.','.$row["disponibilie_in_magazzino"].','.$row["prodotto_id"].')">
+            <td class="text-center"><button type="button" class="btn btn-danger" onclick="aggiornaProdottoNellaSacca('.stampaQuantitaInserita($row["isConvalidato"],$row["quantita_attuale"]).','.$row["id_pns"].','.$codiceSacca.','.$row["disponibilie_in_magazzino"].','.$row["prodotto_id"].')">
                     <i class="fas fa-save"></i>
                 </button></td>
-            <td class="text-center"><button type="button" class="btn btn-primary" onclick="confermaEliminazione(\''.$row["nome"].'\','.$row["id_pns"].','.$codiceSacca.')" data-toggle="modal" data-target="#confermaEliminazioneProdottoNellaSacca">
+            <td class="text-center"><button type="button" class="btn btn-danger" onclick="confermaEliminazione(\''.$row["nome"].'\','.$row["id_pns"].','.$codiceSacca.')" data-toggle="modal" data-target="#confermaEliminazioneProdottoNellaSacca">
                     <i class="fas fa-times"></i>
                 </button></td>
         </tr>';
@@ -217,7 +217,7 @@ function generaTabellaProdottiNonNellaSacca($codiceSacca){
                     <input type="number" class="form-control" id="qtaMax'.$row["prodotto_id"].'" placeholder="Inserire la quantità massima">
                 </div>
             </td>
-            <td class="text-center"><button type="button" onclick="aggiungiProdottoNellaSacca('.$row["prodotto_id"].','.$codiceSacca.')" class="btn btn-primary">
+            <td class="text-center"><button type="button" onclick="aggiungiProdottoNellaSacca('.$row["prodotto_id"].','.$codiceSacca.')" class="btn btn-danger">
                     <i class="fas fa-plus"></i>
                 </button></td>
         </tr>';

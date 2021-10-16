@@ -7,11 +7,11 @@
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
                 $finale='<div class="row pt-5">
-                <div class="col-4">
+                <div class="col-5">
                         <a class="text-decoration-none" href="index.php"><i class="text-dark h3 fas fa-laptop-medical"></i><span class="text-sans-serif h3 text-dark"> ReintegrApp</span></a>
                         <p class="lead">'.NOME_ASSOCIAZIONE.'</p>
                 </div>
-                <div class="col-8 text-center">
+                <div class="col-7 text-center">
                     <h3>CheckList '.$row["tipo"].' '.$row["codice_mezzo"].'</h3>
                     <small>Stampato alle ore '.$row["data_attuale"].' da '.$_SESSION["operatore"].'</small>
                 </div>

@@ -57,7 +57,7 @@ function getTabellaListaSacche($id){
         while($row = $result->fetch_assoc()) {
             $finale=$finale.'<tr>
             <td scope="row">'.coloraSacca($row["colore"]).$row["nome"].'</td>
-            <td class="text-center"><a href="modificaSacca.php?id='.$row["id"].'"><button type="button" class="btn btn-primary">
+            <td class="text-center"><a href="modificaSacca.php?id='.$row["id"].'"><button type="button" class="btn btn-danger">
                         <i class="fas fa-edit"></i>
                     </button></a></td>
         </tr>';

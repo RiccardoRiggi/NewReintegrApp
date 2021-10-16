@@ -20,11 +20,11 @@
                 <td scope="row">'.$row["nome"].'</td>
                 <td class="text-center"><span>'.stampaNumeroProdotti($row["totale_magazzino"]).'</span></td>
                 <td class="text-center"><span>'.stampaNumeroProdotti($row["totale_disposizione_militi"]).'</span></td>
-                <td class="text-center"><a href="schedaProdotto.php?id='.$row["prodotto_id"].'"><button type="button" class="btn btn-primary">
+                <td class="text-center"><a href="schedaProdotto.php?id='.$row["prodotto_id"].'"><button type="button" class="btn btn-danger">
                             <i class="fas fa-edit"></i>
                         </button></a></td>
                 <td class="text-center">
-                    <button data-toggle="modal" data-target="#confermaEliminazione" onclick="confermaEliminazione(\''.$row["nome"].' \','.$row["prodotto_id"].');" type="button" class="btn btn-primary">
+                    <button data-toggle="modal" data-target="#confermaEliminazione" onclick="confermaEliminazione(\''.$row["nome"].' \','.$row["prodotto_id"].');" type="button" class="btn btn-danger">
                         <i class="fas fa-trash-alt"></i>
                     </button>
                 </td>

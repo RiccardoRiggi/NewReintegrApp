@@ -23,11 +23,11 @@
                     <div class="row ">
                         <div class="col-1"></div>
                         <div class="col-4 p-2 bg-white">
-                            <h4 class="pl-3 testo-scuro">Lista sacche</h4>
+                            <h4 class="pl-3 font-weight-bold">Lista sacche</h4>
                         </div>
                         <div class="col-6 p-2 text-right bg-white">
-                            <div class="btn-example">
-                                <a href="aggiungiSacca.php"><button type="button" class="btn btn-primary">
+                            <div class="btn-example p-1">
+                                <a href="aggiungiSacca.php"><button type="button" class="btn btn-danger">
                                         <i class="fas fa-suitcase"></i> Aggiungi sacca
                                     </button></a>
 
@@ -39,7 +39,7 @@
                     <!-- CONTENUTO -->
                     <div class="row pt-5">
                         <div class="col-1"></div>
-                        <div class="col-10 bg-white">
+                        <div class="col-10 bg-white p-3">
                             <?php echo getTabellaListaSacche(); ?>
                         </div>
                         <div class="col-1"></div>
@@ -85,8 +85,8 @@
                                 <p>Vuoi confermare l'eliminazione della sacca <span id="saccaDel"></span>? </p>
                             </div>
                             <div class="modal-footer">
-                                <button class="btn btn-primary btn-sm" type="button" data-dismiss="modal" onclick="eliminaSacca()">Conferma</button>
-                                <button class="btn btn-outline-primary btn-sm" data-dismiss="modal" type="button">Annulla</button>
+                                <button class="btn btn-danger btn-sm" type="button" data-dismiss="modal" onclick="eliminaSacca()">Conferma</button>
+                                <button class="btn btn-outline-danger btn-sm" data-dismiss="modal" type="button">Annulla</button>
                             </div>
                         </div>
                     </div>

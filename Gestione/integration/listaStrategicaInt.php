@@ -20,7 +20,7 @@ function generaTabellaEsauriti(){
                 <td scope="row">'.$row["nome"].'</td>
                 <td class="text-center"><span>'.stampaNumeroProdotti($row["totale_magazzino"]).'</span></td>
                 <td class="text-center"><span>'.stampaNumeroProdotti($row["totale_disposizione_militi"]).'</span></td>
-                <td class="text-center"><a href="schedaProdotto.php?id='.$row["prodotto_id"].'"><button type="button" class="btn btn-primary">
+                <td class="text-center"><a href="schedaProdotto.php?id='.$row["prodotto_id"].'"><button type="button" class="btn btn-danger">
                             <i class="fas fa-edit"></i>
                         </button></a></td>
             </tr>';
@@ -51,7 +51,7 @@ function generaTabellaDaReintegrare(){
             <td scope="row">'.$row["nome"].'</td>
             <td class="text-center"><span>'.stampaNumeroProdotti($row["totale_magazzino"]).'</span></td>
             <td class="text-center"><span>'.stampaNumeroProdotti($row["totale_disposizione_militi"]).'</span></td>
-            <td class="text-center"><a href="schedaProdotto.php?id='.$row["prodotto_id"].'"><button type="button" class="btn btn-primary">
+            <td class="text-center"><a href="schedaProdotto.php?id='.$row["prodotto_id"].'"><button type="button" class="btn btn-danger">
                         <i class="fas fa-edit"></i>
                     </button></a></td>
         </tr>';
@@ -127,19 +127,19 @@ function stampaNumeroProdotti($numero){
 function generaPulsanteModifica($id){
     if(substr($id,0,1)=="Z"){
         $id=substr($id,1,strlen($id)-1);
-        return '<a href="modificaZaino.php?id='.$id.'"><button type="button" class="btn btn-primary">
+        return '<a href="modificaZaino.php?id='.$id.'"><button type="button" class="btn btn-danger">
     <i class="fas fa-edit"></i>
 </button></a>';
     }
     if(substr($id,0,1)=="M"){
         $id=substr($id,1,strlen($id)-1);
-        return '<a href="modificaVeicolo.php?id='.$id.'"><button type="button" class="btn btn-primary">
+        return '<a href="modificaVeicolo.php?id='.$id.'"><button type="button" class="btn btn-danger">
     <i class="fas fa-edit"></i>
 </button></a>';
     }
     if(substr($id,0,1)=="S"){
         $id=substr($id,1,strlen($id)-1);
-        return '<a href="modificaSacca.php?id='.$id.'"><button type="button" class="btn btn-primary">
+        return '<a href="modificaSacca.php?id='.$id.'"><button type="button" class="btn btn-danger">
     <i class="fas fa-edit"></i>
 </button></a>';
     }

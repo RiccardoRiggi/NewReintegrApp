@@ -12,7 +12,7 @@ function ottieniSacca($id)
 
 function generaComboModificaColoreSacca($colore)
 {
-    return '<select title="Scegli una opzione" id="colore_sacca" name="colore_sacca">
+    return '<select class="form-control" title="Scegli una opzione" id="colore_sacca" name="colore_sacca">
     <option ' . selected($colore, "Rossa") . ' value="Rossa">Rossa</option>
     <option ' . selected($colore, "Gialla") . ' value="Gialla">Gialla</option>
     <option ' . selected($colore, "Verde") . ' value="Verde">Verde</option>
@@ -63,7 +63,7 @@ function stampaDatiSigillo($colore,$codice,$operatoreSigillo,$dataSigillo){
     if($colore!=null && $codice!=null)
         return '<small class=" pl-3 form-text text-muted">Sacca sigillitata da '.$operatoreSigillo.' alle ore '.$dataSigillo.' con il sigillo numero <strong>'.$codice."</strong> di colore <strong>".$colore.'</strong></small>';
     else
-        return '<small class=" pl-3 form-text text-muted text-danger-rosso-solo">Attenzione! La sacca non è stata ancora sigillata!</small>';
+        return '<small class=" pl-3 form-text text-muted text-danger-rosso-solo font-weight-bold">Attenzione! La sacca non è stata ancora sigillata!</small>';
 }
 
 function stampaDataUltimaModifica($prodotto){

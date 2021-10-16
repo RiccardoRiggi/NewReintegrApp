@@ -21,7 +21,7 @@
                 <td class="text-center">'.$row["tipo"].'</td>
                 <td class="text-center">'.$row["nome"].'</td>
                 <td class="text-center">'.$row["targa"].'</td>
-                <td class="text-center"><a href="schedaCheckList.php?id='.$row["mezzo_id"].'"><button type="button" class="btn btn-primary">
+                <td class="text-center"><a href="schedaCheckList.php?id='.$row["mezzo_id"].'"><button type="button" class="btn btn-danger">
                             <i class="fas fa-print"></i>
                         </button></a></td>
             </tr>';

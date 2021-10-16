@@ -18,11 +18,11 @@
                 $finale=$finale.'<tr>
                 <td scope="row">'.coloraSacca($row["colore"]).$row["nome"].'</td>
                 <td scope="row">'.$row["posizione"].'</td>
-                <td class="text-center"><a href="modificaSacca.php?id='.$row["id"].'"><button type="button" class="btn btn-primary">
+                <td class="text-center"><a href="modificaSacca.php?id='.$row["id"].'"><button type="button" class="btn btn-danger">
                             <i class="fas fa-edit"></i>
                         </button></a></td>
                 <td class="text-center">
-                    <button data-toggle="modal" data-target="#confermaEliminazione" onclick="confermaEliminazione(\''.$row["nome"].' \','.$row["id"].');" type="button" class="btn btn-primary">
+                    <button data-toggle="modal" data-target="#confermaEliminazione" onclick="confermaEliminazione(\''.$row["nome"].' \','.$row["id"].');" type="button" class="btn btn-danger">
                         <i class="fas fa-trash-alt"></i>
                     </button>
                 </td>

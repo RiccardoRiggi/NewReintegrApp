@@ -22,7 +22,7 @@
                         <div class="row ">
                             <div class="col-1"></div>
                             <div class="col-10 p-2 bg-white">
-                                <h4 class="pl-3 testo-scuro">Classifica Reintegri</h4>
+                                <h4 class="pl-3 font-weight-bold">Classifica Reintegri</h4>
                             </div>
                             <div class="col-1"></div> 
                         </div>

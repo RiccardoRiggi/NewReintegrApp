@@ -23,7 +23,7 @@
                     <div class="row ">
                         <div class="col-1"></div>
                         <div class="col-4 p-2 bg-white">
-                            <h4 class="pl-3 testo-scuro">Lista CheckList</h4>
+                            <h4 class="pl-3 font-weight-bold">Lista CheckList</h4>
                         </div>
                         <div class="col-6 p-2 text-right bg-white">
                             
@@ -35,7 +35,7 @@
 
                     <div class="row pt-5">
                         <div class="col-1"></div>
-                        <div class="col-10 bg-white">
+                        <div class="col-10 bg-white p-3">
                             <?php echo getTabellaListaCheckList(); ?>
                         </div>
                         <div class="col-1"></div>

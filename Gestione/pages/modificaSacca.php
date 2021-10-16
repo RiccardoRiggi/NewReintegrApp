@@ -38,16 +38,16 @@ if (isset($_GET["id"])) {
                     <form id="formModificaSacca" action="modificaSacca.php?id=<?php echo $sacca["sacca_id"]; ?>" class="needs-validation" novalidate method="POST" onsubmit="return validaSigillo()">
                         <div class="row ">
                             <div class="col-1"></div>
-                            <div class="col-8 p-2 bg-white">
-                                <h4 class="pl-3 testo-scuro">Modifica Sacca </h4>
+                            <div class="col-7 p-2 bg-white">
+                                <h4 class="pl-3 font-weight-bold">Modifica Sacca </h4>
                                 <?php echo stampaDatiSigillo($sacca["colore_sigillo"], $sacca["codice_sigillo"], $sacca["operatore_sigillo"], $sacca["data_sigillo"]); ?>
                             </div>
-                            <div class="col-2 p-2 text-right bg-white">
+                            <div class="col-3 p-2 text-right bg-white">
                                 <div class="btn-example">
-                                <a href="listaSigilli.php?id=<?php echo $sacca["sacca_id"]; ?>"><button type="button" class="btn btn-primary">
+                                <a href="listaSigilli.php?id=<?php echo $sacca["sacca_id"]; ?>"><button type="button" class="btn btn-danger">
                                         <i class="fas fa-history"></i> Storico Sigilli
                                         </button></a>
-                                    <button type="button" onclick="validaFormModificaSacca();" class="btn btn-primary">
+                                    <button type="button" onclick="validaFormModificaSacca();" class="btn btn-danger">
                                         <i class="fas fa-save"></i> Salva
                                     </button>
 
@@ -82,7 +82,7 @@ if (isset($_GET["id"])) {
                                             <div class="col">
                                                 <div class="bootstrap-select-wrapper">
                                                     <label>Posizione della sacca</label>
-                                                    <select name="padre" id="padre" title="Scegli una opzione">
+                                                    <select class="form-control" name="padre" id="padre" title="Scegli una opzione">
                                                         <?php echo generaComboModificaPosizioneSacca($sacca["mezzo_id"], $sacca["zaino_id"]); ?>
                                                     </select>
                                                 </div>
@@ -132,8 +132,8 @@ if (isset($_GET["id"])) {
 
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-outline-primary btn-sm" data-dismiss="modal">Indietro</button>
-                                        <button class="btn btn-primary btn-sm" type="button" onclick="validaSigillo();">Conferma sigillo</button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="modal">Indietro</button>
+                                        <button class="btn btn-danger btn-sm" type="button" onclick="validaSigillo();">Conferma sigillo</button>
                                     </div>
                                 </div>
                             </div>
@@ -147,12 +147,12 @@ if (isset($_GET["id"])) {
                                 <li class="nav-item">
 
                                     <a class="nav-link active" id="tab1c-tab" data-toggle="tab" href="#tab1b" role="tab" aria-controls="tab1b" aria-selected="true">
-                                        <i class="h5 testo-blu fas fa-notes-medical pr-3"></i> Prodotti nella sacca
+                                        <i class="h5 text-danger fas fa-notes-medical pr-3"></i> Prodotti nella sacca
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="tab2b-tab" data-toggle="tab" href="#tab2b" role="tab" aria-controls="tab2b" aria-selected="false">
-                                        <i class="h5 testo-blu fas fa-plus-square pr-3"></i>
+                                        <i class="h5 text-danger fas fa-plus-square pr-3"></i>
                                         Aggiungi nuovi prodotti
                                     </a>
                                 </li>
@@ -212,7 +212,7 @@ if (isset($_GET["id"])) {
                             xmlhttp.onreadystatechange = function() {
                                 if (this.readyState == 4 && this.status == 200) {
                                     if (this.responseText == "UPDATED") {
-                                        notificationShow('confermaInserimento', 2500);
+                                        document.getElementById("bottoneProdottoAggiunto").click();
                                         caricaTabelle();
                                     } else {
                                         setTimeout(() => {
@@ -279,7 +279,7 @@ if (isset($_GET["id"])) {
                             xmlhttppppp.onreadystatechange = function() {
                                 if (this.readyState == 4 && this.status == 200) {
                                     if (this.responseText == "UPDATED") {
-                                        notificationShow('confermaSalvataggio', 2500);
+                                        document.getElementById("bottoneSalvataggioEseguito").click();
                                         caricaTabelle();
                                     } else {
                                         setTimeout(() => {
@@ -302,7 +302,7 @@ if (isset($_GET["id"])) {
                         xhr.onload = function() {
                             if (xhr.readyState == 4 && xhr.status == "200") {
                                 if (this.responseText == "UPDATED") {
-                                    notificationShow('confermaEliminazione', 2500);
+                                    document.getElementById("bottoneEliminazioneEseguita").click();
                                     caricaTabelle();
                                 } else {
                                     setTimeout(() => {
@@ -351,21 +351,9 @@ if (isset($_GET["id"])) {
                     }
                 </script>
 
-                <div class="container test-desktop">
-                    <div class="notification bottom-fix with-icon success" role="alert" aria-labelledby="not1d-title" id="confermaSalvataggio">
-                        <h5 id="not1d-title"><i class="fas fa-check h1 text-success"></i>Salvataggio eseguito!</h5>
-                    </div>
-                </div>
-                <div class="container test-desktop">
-                    <div class="notification bottom-fix with-icon success" role="alert" aria-labelledby="not1d-title" id="confermaEliminazione">
-                        <h5 id="not1d-title"><i class="fas fa-check h1 text-success"></i>Eliminazione eseguita!</h5>
-                    </div>
-                </div>
-                <div class="container test-desktop">
-                    <div class="notification bottom-fix with-icon success" role="alert" aria-labelledby="not1d-title" id="confermaInserimento">
-                        <h5 id="not1d-title"><i class="fas fa-check h1 text-success"></i>Prodotto aggiunto!</h5>
-                    </div>
-                </div>
+                
+                
+                
 
 
                 <div class="modal fade" tabindex="-1" role="dialog" id="confermaEliminazioneProdottoNellaSacca">
@@ -379,8 +367,8 @@ if (isset($_GET["id"])) {
                                 <p>Vuoi confermare l'eliminazione del prodotto <span id="utenteDel"></span> dalla sacca selezionata? </p>
                             </div>
                             <div class="modal-footer">
-                                <button class="btn btn-primary btn-sm" type="button" data-dismiss="modal" onclick="eliminaProdottoNellaSacca()">Conferma</button>
-                                <button class="btn btn-outline-primary btn-sm" data-dismiss="modal" type="button">Annulla</button>
+                                <button class="btn btn-danger btn-sm" type="button" data-dismiss="modal" onclick="eliminaProdottoNellaSacca()">Conferma</button>
+                                <button class="btn btn-outline-danger btn-sm" data-dismiss="modal" type="button">Annulla</button>
                             </div>
                         </div>
                     </div>

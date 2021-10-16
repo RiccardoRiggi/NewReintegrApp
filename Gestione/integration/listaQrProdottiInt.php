@@ -25,7 +25,7 @@ function generaTabellaEtichetteProdotti(){
                                             <td class="align-middle">'.$row["nome"].'</td>
                                             <td class="align-middle">'.$row["descrizione"].'</td>
                                             <td class="align-middle text-center">
-                                            <a target="_blank" href="stampaQrProdottiDiGruppo.php?id='.$row["prodotto_id"].'" ><button type="button" class="btn btn-primary">
+                                            <a target="_blank" href="stampaQrProdottiDiGruppo.php?id='.$row["prodotto_id"].'" ><button type="button" class="btn btn-danger">
                                             <i class="fas fa-print"></i>
                                         </button></a></td>
                                         </tr>';

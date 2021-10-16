@@ -43,11 +43,11 @@ if (isset($_GET["id"])){
                         <div class="row ">
                             <div class="col-1"></div>
                             <div class="col-4 p-2 bg-white">
-                                <h4 class="pl-3 testo-scuro"><?php echo stampaTitolo($isModifica) ?></h4>
+                                <h4 class="pl-3 font-weight-bold"><?php echo stampaTitolo($isModifica) ?></h4>
                             </div>
                             <div class="col-6 p-2 text-right bg-white">
-                                <div class="btn-example">
-                                    <button type="submit" class="btn btn-primary">
+                                <div class="btn-example p-1">
+                                    <button type="submit" class="btn btn-danger">
                                             <i class="fas fa-save"></i> Salva
                                         </button>
 

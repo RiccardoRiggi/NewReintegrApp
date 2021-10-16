@@ -22,17 +22,17 @@
                     <div class="row ">
                         <div class="col-1"></div>
                         <div class="col-4 p-2 bg-white">
-                            <h4 class="pl-3 testo-scuro">Lista Etichette</h4>
+                            <h4 class="pl-3 font-weight-bold">Lista Etichette</h4>
                         </div>
                         <div class="col-6 p-2 text-right bg-white">
-                            <div class="btn-example">
+                            <div class="btn-example p-1">
                                 <form method="POST" action="stampaQrProdottiDiGruppo.php" target="_blank">
                                     <input type="hidden" value="" name="listaIdPost" id="listaIdPost">
-                                    <button id="bottoneStampaSelezionati" disabled type="submit" class="btn btn-primary">
+                                    <button id="bottoneStampaSelezionati" disabled type="submit" class="btn btn-danger">
                                         <i class="fas fa-check"></i> Stampa selezionati <span id="numeroSelezionati"> (0)</span>
                                     </button>
 
-                                    <a href="stampaQrProdottiDiGruppo.php?all=true" target="_blank"><button type="button" class="btn btn-primary">
+                                    <a href="stampaQrProdottiDiGruppo.php?all=true" target="_blank"><button type="button" class="btn btn-danger">
                                             <i class="fas fa-print"></i> Stampa tutti
                                         </button></a>
 
@@ -44,7 +44,7 @@
 
                     <div class="row pt-3">
                         <div class="col-1"></div>
-                        <div class="col-10 bg-white">
+                        <div class="col-10 bg-white p-3">
                             <?php echo generaTabellaEtichetteProdotti(); ?>
 
                         </div>

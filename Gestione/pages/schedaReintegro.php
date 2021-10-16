@@ -34,7 +34,7 @@
                         <div class="row ">
                             <div class="col-1"></div>
                             <div class="col-10 p-2 bg-white">
-                                <h4 class="pl-3 testo-scuro">Scheda Reintegro N. <?php echo $scheda["reintegrazione_id"]; ?></h4>
+                                <h4 class="pl-3 font-weight-bold">Scheda Reintegro N. <?php echo $scheda["reintegrazione_id"]; ?></h4>
                                 <small class=" pl-3 form-text text-muted"><strong><?php echo $scheda["nome"]." ".$scheda["cognome"]; ?></strong> ha reintegrato il veicolo <strong><?php echo $scheda["tipo"]." ".$scheda["codice_mezzo"]; ?></strong> alle ore <?php echo $scheda["data_reintegro"]; ?></small>
                             </div>
                             <div class="col-1">
@@ -48,7 +48,7 @@
                             <div class="col-1">
                             
                             </div>
-                            <div class="col-10 bg-white">
+                            <div class="col-10 bg-white p-3">
                                 <?php echo stampaListaProdottiReintegrati($_GET["id"]); ?>
                             </div>
                             <div class="col-1">

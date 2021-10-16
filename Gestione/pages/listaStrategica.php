@@ -47,7 +47,7 @@ if (isset($_GET["t"])) {
                     <div class="row ">
                         <div class="col-1"></div>
                         <div class="col-4 p-2 bg-white">
-                            <h4 class="pl-3 testo-scuro"><?php echo $titolo; ?></h4>
+                            <h4 class="pl-3 font-weight-bold"><?php echo $titolo; ?></h4>
                         </div>
                         <div class="col-6 p-2 text-right bg-white">
 
@@ -60,7 +60,7 @@ if (isset($_GET["t"])) {
                     <div class="row pt-5">
 
                         <div class="col-1"></div>
-                        <div class="col-10 bg-white"><?php echo $tabella; ?></div>
+                        <div class="col-10 bg-white p-3"><?php echo $tabella; ?></div>
                         <div class="col-1"></div>
 
                     </div>

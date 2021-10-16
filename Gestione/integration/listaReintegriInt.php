@@ -26,7 +26,7 @@ function stampaListaReintegri(){
                                             <td class="align-middle">'.$row["tipo"].' '.$row["codice_mezzo"].'</td>
                                             <td class="align-middle">'.$row["data_reintegro"].'</td>
 
-                                            <td class="text-center"><a href="schedaReintegro.php?id='.$row["reintegrazione_id"].'"><button type="button" class="btn btn-primary">
+                                            <td class="text-center"><a href="schedaReintegro.php?id='.$row["reintegrazione_id"].'"><button type="button" class="btn btn-danger">
                                             <i class="fas fa-info-circle"></i>
                                                 </button></a></td>
                                         </tr>';

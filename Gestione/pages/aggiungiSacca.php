@@ -41,11 +41,11 @@ if (isset($_POST["nome"])) {
                     <div class="row ">
                         <div class="col-1"></div>
                         <div class="col-4 p-2 bg-white">
-                            <h4 class="pl-3 testo-scuro">Aggiungi Sacca</h4>
+                            <h4 class="pl-3 font-weight-bold">Aggiungi Sacca</h4>
                         </div>
                         <div class="col-6 p-2 text-right bg-white">
                             <div class="btn-example">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-danger">
                                         <i class="fas fa-save"></i> Salva
                                     </button>
 
@@ -72,7 +72,7 @@ if (isset($_POST["nome"])) {
                                         <div class="col">
                                             <div class="bootstrap-select-wrapper">
                                                 <label>Colore della sacca</label>
-                                                <select title="Scegli una opzione" id="colore" name="colore">
+                                                <select class="form-control" title="Scegli una opzione" id="colore" name="colore">
                                                     <option value="Rossa">Rossa</option>
                                                     <option value="Gialla">Gialla</option>
                                                     <option value="Verde">Verde</option>
@@ -84,7 +84,7 @@ if (isset($_POST["nome"])) {
                                         <div class="col">
                                             <div class="bootstrap-select-wrapper">
                                                 <label>Posizione della sacca</label>
-                                                <select name="padre" id="padre" title="Scegli una opzione">
+                                                <select class="form-control" name="padre" id="padre" title="Scegli una opzione">
                                                     <?php echo generaComboPosizioneSacca(); ?>
                                                 </select>
                                             </div>

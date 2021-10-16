@@ -22,16 +22,16 @@
                     <div class="row ">
                         <div class="col-1"></div>
                         <div class="col-4 p-2 bg-white">
-                            <h4 class="pl-3 testo-scuro">Lista prodotti</h4>
+                            <h4 class="pl-3 font-weight-bold">Lista prodotti</h4>
                         </div>
                         <div class="col-6 p-2 text-right bg-white">
-                            <div class="btn-example">
+                            <div class="btn-example p-1">
                                 <a href="listaQrProdotti.php">
-                                    <button type="button" class="btn btn-primary">
+                                    <button type="button" class="btn btn-danger">
                                         <i class="fas fa-qrcode"></i> Stampa etichette
                                     </button></a>
 
-                                <a href="schedaProdotto.php"><button type="button" class="btn btn-primary">
+                                <a href="schedaProdotto.php"><button type="button" class="btn btn-danger">
                                         <i class="fas fa-plus-square"></i> Aggiungi prodotto
                                     </button></a>
 
@@ -40,9 +40,9 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row pt-3">
                         <div class="col-1"></div>
-                        <div class="col-10 bg-white">
+                        <div class="col-10 bg-white p-3">
                             <?php echo recuperoListaProdotti(); ?>
                         </div>
                         <div class="col-1"></div>
@@ -93,8 +93,8 @@
                                 <p>Vuoi confermare l'eliminazione del prodotto <span id="prodottoDel"></span>? </p>
                             </div>
                             <div class="modal-footer">
-                                <button class="btn btn-primary btn-sm" type="button" data-dismiss="modal" onclick="eliminaProdotto()">Conferma</button>
-                                <button class="btn btn-outline-primary btn-sm" data-dismiss="modal" type="button">Annulla</button>
+                                <button class="btn btn-danger btn-sm" type="button" data-dismiss="modal" onclick="eliminaProdotto()">Conferma</button>
+                                <button class="btn btn-outline-danger btn-sm" data-dismiss="modal" type="button">Annulla</button>
                             </div>
                         </div>
                     </div>
