@@ -15,18 +15,16 @@
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
                 <?php include './common/header.php'; ?>
-                
-                
-                
+
+
+
                 <!-- INIZIO CONTENUTO PAGINA -->
                 <div class="container-fluid ">
-                    <div class="row ">
-                        <div class="col-1"></div>
-                        <div class="col-4 p-2 bg-white">
-                            <h4 class="pl-3 font-weight-bold">Gestione Ruoli</h4>
-                        </div>
-                        <div class="col-6 p-2 text-right bg-white">
-                            <div class="btn-example p-1">
+                    
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-danger">Gestione ruoli</h6>
+                            <div class="btn-example text-right">
                                 <a href="listaBadgeAccesso.php">
                                     <button type="button" class="btn btn-danger">
                                         <i class="fas fa-id-badge"></i> Badge Accesso
@@ -37,23 +35,24 @@
                                     </button></a>
 
                             </div>
-                            <div class="col-1"></div>
+                        </div>
+                        <div class="card-body">
+                            <!-- CONTENUTO -->
+
+                            <div class="row">
+                                <div class="col-1">
+
+                                </div>
+                                <div class="col-10 bg-white">
+                                    <?php echo generaTabella(); ?>
+                                </div>
+                                <div class="col-1">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- CONTENUTO -->
-
-                    <div class="row">
-                        <div class="col-1">
-
-                        </div>
-                        <div class="col-10 bg-white">
-                            <?php echo generaTabella(); ?>
-                        </div>
-                        <div class="col-1">
-
-                        </div>
-                    </div>
 
 
 
@@ -62,7 +61,7 @@
                 <script>
                     function aggiornaModifica(idUtente, idRuolo) {
                         abilitaPulsante(idUtente);
-                        if(idRuolo==document.getElementById("ruoloOriginale" + idUtente).value){
+                        if (idRuolo == document.getElementById("ruoloOriginale" + idUtente).value) {
                             document.getElementById("pulsanteSalva" + idUtente).disabled = true;
                         }
                         document.getElementById("modifica" + idUtente).value = idRuolo;
@@ -74,7 +73,7 @@
 
                     function salvaNuovoRuolo(idUtente, nome, cognome) {
                         //console.log(document.getElementById("modifica"+idUtente).value);
-                        var codiceRuolo = document.getElementById("modifica"+idUtente).value;
+                        var codiceRuolo = document.getElementById("modifica" + idUtente).value;
                         var url = "../api/utenti.php";
                         var xhr = new XMLHttpRequest();
                         xhr.open("GET", url + '?c=vp&id=' + idUtente, true);
@@ -82,16 +81,16 @@
                             if (xhr.readyState == 4 && xhr.status == "200") {
                                 if (xhr.responseText == "0") {
                                     document.getElementById("linkImpostaPw").setAttribute("href", "modificaUtente.php?id=" + idUtente);
-                                    document.getElementById("bottoneNecessarioCambioPasswordDalServizio").click(); 
+                                    document.getElementById("bottoneNecessarioCambioPasswordDalServizio").click();
                                 } else {
                                     var url = "../api/utenti.php";
                                     var xx = new XMLHttpRequest();
-                                    xx.open("GET", url + '?c=ct&id=' + idUtente+'&codR='+codiceRuolo, true);
+                                    xx.open("GET", url + '?c=ct&id=' + idUtente + '&codR=' + codiceRuolo, true);
                                     xx.onload = function() {
                                         if (xx.readyState == 4 && xx.status == "200") {
                                             document.getElementById("pulsanteSalva" + idUtente).disabled = true;
-                                            document.getElementById("ruoloOriginale"+idUtente).value=codiceRuolo;
-                                            document.getElementById("bottoneRuoloAggiornatoDalServizio").click();  
+                                            document.getElementById("ruoloOriginale" + idUtente).value = codiceRuolo;
+                                            document.getElementById("bottoneRuoloAggiornatoDalServizio").click();
                                             console.log("OK");
                                         } else {
 
@@ -116,8 +115,8 @@
                         xhr.send(null);
                     }
                 </script>
-               
-                
+
+
                 <!-- FINE CONTENUTO PAGINA -->
                 <?php include './common/footer.php'; ?>
             </div>

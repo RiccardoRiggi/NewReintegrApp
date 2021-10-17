@@ -41,7 +41,8 @@ INSERT INTO `voci_menu` (`voce_id`, `etichetta`, `icona`, `tooltip`, `codice_pad
 (38, 'Stampa Etichetta', '', '', 15, 'stampaQrProdottiDiGruppo.php', 0),
 (39, 'Scheda Checklist', '', '', 19, 'schedaCheckList.php', 0),
 (40, 'Scheda Reintegro', '', '', 21, 'schedaReintegro.php', 0),
-(41, 'Lista Prodotti Strategica', '', '', 15, 'listaStrategica.php', 0);
+(41, 'Lista Prodotti Strategica', '', '', 15, 'listaStrategica.php', 0),
+(42, 'Lista Sigilli', '', '', 15, 'listaSigilli.php', 0);
 
 -- CREAZIONE UTENTE INIZIALE SUPERUSER CON LE SEGUENTI CREDENZIALI
 -- info@ghiroinformatico.net - Alice02

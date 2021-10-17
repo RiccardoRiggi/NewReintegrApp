@@ -16,9 +16,9 @@
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
                 <?php include './common/header.php'; ?>
-                
-                
-                
+
+
+
                 <!-- INIZIO CONTENUTO PAGINA -->
                 <div class="container-fluid ">
                     <div class="row">
@@ -27,19 +27,32 @@
                         <?php echo stampaSchedaProdottiDaReintegrate(); ?>
                         <?php echo stampaSchedaProdottiEsauriti(); ?>
                     </div>
-                
+
 
                     <div class="row">
-                        <div class="col-6 ml-3 bg-white shadow alert">
-                            <h4 class="pl-3 text-dark">Mezzi reintegrati negli ultimi 7 giorni</h4>
-                            <canvas class=" mx-auto d-block" id="myChart" width="400" height="200"></canvas>
-                            <small class="text-muted text-center">Il grafico verrà generato dopo aver raccolto almeno 7 giorni di dati</small>
+                        <div class="col-6 ">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-danger">Mezzi reintegrati negli ultimi 7 giorni</h6>
+                                </div>
+                                <div class="card-body">
+                                    <canvas class=" mx-auto d-block" id="myChart" width="400" height="200"></canvas>
+                                    <small class="text-muted text-center">Il grafico verrà generato dopo aver raccolto almeno 7 giorni di dati</small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ml-5 col-5 bg-white shadow alert">
-                            <h4 class="pl-3 text-dark">Classifica</h4>
-                                <ul class="list-group">
-                                    <?php echo stampaClassificaHomePage(); ?>
-                                </ul>
+                        <div class="col-6">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-danger">Classifica</h6>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <?php echo stampaClassificaHomePage(); ?>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

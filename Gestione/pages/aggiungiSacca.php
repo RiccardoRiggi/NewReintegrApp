@@ -38,29 +38,24 @@ if (isset($_POST["nome"])) {
                 <form action="aggiungiSacca.php" class="needs-validation"  novalidate method="post" onsubmit="return validaFormAggiungiSacca()" autocomplete="new-password">
 
                 <div class="container-fluid  pt-3">
-                    <div class="row ">
-                        <div class="col-1"></div>
-                        <div class="col-4 p-2 bg-white">
-                            <h4 class="pl-3 font-weight-bold">Aggiungi Sacca</h4>
-                        </div>
-                        <div class="col-6 p-2 text-right bg-white">
-                            <div class="btn-example">
+                    
+                    <div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-danger">Aggiungi sacca</h6>
+        <div class="btn-example text-right">
                                 <button type="submit" class="btn btn-danger">
                                         <i class="fas fa-save"></i> Salva
                                     </button>
 
                             </div>
-                            <div class="col-1"></div>
-                        </div>
-                    </div>
-
-                    <!-- CONTENUTO -->
-                    <div class="row pt-3">
+    </div>
+    <div class="card-body">
+    <div class="row pt-3">
                         <div class="col-1">
 
                         </div>
                         <div class="col-10 bg-white">
-                            <div class="row pt-5">
+                            <div class="row ">
                                 <div class="col">
                                     <div class="row">
                                         <div class="col">
@@ -101,6 +96,10 @@ if (isset($_POST["nome"])) {
 
                         </div>
                     </div>
+    </div>
+</div>
+                    <!-- CONTENUTO -->
+                    
                     <script>
                     function validaFormAggiungiSacca() {
                         esito = true;

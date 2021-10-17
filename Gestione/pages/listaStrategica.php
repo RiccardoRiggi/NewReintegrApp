@@ -15,7 +15,7 @@ if (isset($_GET["t"])) {
     } else if ($_GET["t"] == "scaduti") {
         $tabella = generaTabellaScaduti();
         $titolo = "Lista prodotti scaduti";
-    }else if ($_GET["t"] == "scadenza") {
+    } else if ($_GET["t"] == "scadenza") {
         $tabella = generaTabellaScadenza();
         $titolo = "Lista prodotti in scadenza";
     }
@@ -39,31 +39,29 @@ if (isset($_GET["t"])) {
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
                 <?php include './common/header.php'; ?>
-                
-                
-                
+
+
+
                 <!-- INIZIO CONTENUTO PAGINA -->
                 <div class="container-fluid ">
-                    <div class="row ">
-                        <div class="col-1"></div>
-                        <div class="col-4 p-2 bg-white">
-                            <h4 class="pl-3 font-weight-bold"><?php echo $titolo; ?></h4>
-                        </div>
-                        <div class="col-6 p-2 text-right bg-white">
 
-                            <div class="col-1"></div>
-                        </div>
-                    </div>
 
                     <!-- CONTENUTO -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-danger"><?php echo $titolo; ?></h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row ">
 
-                    <div class="row pt-5">
+                                <div class="col-1"></div>
+                                <div class="col-10 bg-white p-3"><?php echo $tabella; ?></div>
+                                <div class="col-1"></div>
 
-                        <div class="col-1"></div>
-                        <div class="col-10 bg-white p-3"><?php echo $tabella; ?></div>
-                        <div class="col-1"></div>
-
+                            </div>
+                        </div>
                     </div>
+
                 </div>
 
                 <!-- FINE CONTENUTO PAGINA -->

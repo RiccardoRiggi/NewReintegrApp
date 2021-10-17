@@ -13,7 +13,7 @@
         <div class="row  justify-content-center h-100">
             <div class="shadow align-self-center p-5 bg-white alert">
                 <div class="row">
-                    <div class="col">
+                    <div class="col text-center">
                         <a class="text-decoration-none" href="login.php"><i class="text-danger h1 fas fa-laptop-medical"></i><span class="text-sans-serif h1 text-danger"> ReintegrApp</span></a>
                     </div>
                 </div>

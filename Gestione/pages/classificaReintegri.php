@@ -1,52 +1,51 @@
 <?php include '../auth_components/controlloAutenticazione.php'; ?>
 
-<?php include'../integration/classificaReintegriInt.php'; ?>
+<?php include '../integration/classificaReintegriInt.php'; ?>
 
 <!DOCTYPE html>
 <html class="altezza-piena" lang="it">
-    <head>
-        <?php include './common/headscript.php'; ?>
-        <title>Classifica Reintegri - ReintegrApp</title>
-    </head>
-    <body>
+
+<head>
+    <?php include './common/headscript.php'; ?>
+    <title>Classifica Reintegri - ReintegrApp</title>
+</head>
+
+<body>
     <div id="wrapper">
         <?php include './common/sidebar.php'; ?>
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
                 <?php include './common/header.php'; ?>
-                
-                
-                
+
+
+
                 <!-- INIZIO CONTENUTO PAGINA -->
                 <div class="container-fluid ">
-                        <div class="row ">
-                            <div class="col-1"></div>
-                            <div class="col-10 p-2 bg-white">
-                                <h4 class="pl-3 font-weight-bold">Classifica Reintegri</h4>
-                            </div>
-                            <div class="col-1"></div> 
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-danger">Classifica reintegri</h6>
                         </div>
-                        
-                        <!-- CONTENUTO -->
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-10 ">
+                                    <?php echo stampaClassificaReintegri(); ?>
+                                </div>
+                                <div class="col-1"></div>
 
 
-                        <div class="row pt-5">
-                            <div class="col-1"></div>
-                            <div class="col-10 bg-white">
-                                <?php echo stampaClassificaReintegri(); ?>
                             </div>
-                            <div class="col-1"></div>
-
-
                         </div>
-                        
-                        
                     </div>
-                    
-                    <!-- FINE CONTENUTO PAGINA -->
-                    <?php include './common/footer.php'; ?>
+
+
                 </div>
+
+                <!-- FINE CONTENUTO PAGINA -->
+                <?php include './common/footer.php'; ?>
             </div>
-        </div>   
-    </body>
+        </div>
+    </div>
+</body>
+
 </html>

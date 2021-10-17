@@ -2,7 +2,7 @@
     include '../business/zainiBusiness.php';
 
     function generaComboPosizioneZaino(){
-        $finale='<option value="0">Magazzino</option>';
+        $finale='';
         $result = selezionaTuttiVeicoli();
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {

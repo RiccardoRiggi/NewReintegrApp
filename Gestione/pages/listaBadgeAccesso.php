@@ -14,18 +14,16 @@
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
                 <?php include './common/header.php'; ?>
-                
-                
-                
+
+
+
                 <!-- INIZIO CONTENUTO PAGINA -->
                 <div class="container-fluid ">
-                    <div class="row ">
-                        <div class="col-1"></div>
-                        <div class="col-4 p-2 bg-white">
-                            <h4 class="pl-3 font-weight-bold">Lista Badge Di Accesso</h4>
-                        </div>
-                        <div class="col-6 p-2 text-right bg-white">
-                            <div class="btn-example p-1">
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-danger">Lista badge di accesso</h6>
+                            <div class="btn-example text-right">
                                 <form method="POST" action="stampaBadgeAccessoDiGruppo.php" target="_blank">
                                     <input type="hidden" value="" name="listaIdPost" id="listaIdPost">
                                     <button id="bottoneStampaSelezionati" disabled type="submit" class="btn btn-danger">
@@ -38,20 +36,21 @@
 
                                 </form>
                             </div>
-                            <div class="col-1"></div>
+                        </div>
+                        <div class="card-body">
+                            <!-- CONTENUTO -->
+
+                            <div class="row ">
+                                <div class="col-1"></div>
+                                <div class="col-10 bg-white p-3">
+                                    <?php echo generaListaBadgeUtenti(); ?>
+
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- CONTENUTO -->
-
-                    <div class="row pt-3">
-                        <div class="col-1"></div>
-                        <div class="col-10 bg-white p-3">
-                            <?php echo generaListaBadgeUtenti(); ?>
-
-                        </div>
-                        <div class="col-1"></div>
-                    </div>
 
                 </div>
 
@@ -109,7 +108,7 @@
                                         document.getElementById("nomeBloccato").innerHTML = nome;
                                         document.getElementById("cognomeBloccato").innerHTML = cognome;
                                         document.getElementById("stato" + id).innerHTML = '<i title="Badge disabilitato" class="h3 text-danger-rosso-solo far fa-times-circle"></i>';
-                                        document.getElementById("bottoneBadgeBloccatoDalServizio").click();  
+                                        document.getElementById("bottoneBadgeBloccatoDalServizio").click();
                                         bottone.setAttribute("title", "Abilita Badge");
                                         bottone.innerHTML = '<i class="fas fa-unlock"></i>';
 
@@ -118,7 +117,7 @@
                                         document.getElementById("nomeSbloccato").innerHTML = nome;
                                         document.getElementById("cognomeSbloccato").innerHTML = cognome;
                                         document.getElementById("stato" + id).innerHTML = '<i title="Badge abilitato" class="h3 verde far fa-check-circle"></i>';
-                                        document.getElementById("bottoneBadgeSbloccatoDalServizio").click();  
+                                        document.getElementById("bottoneBadgeSbloccatoDalServizio").click();
                                         bottone.setAttribute("title", "Disabilita Badge");
                                         bottone.innerHTML = '<i class="fas fa-lock"></i>';
 
@@ -156,7 +155,7 @@
                                     document.getElementById("pulsanteBloccoSblocco" + id).setAttribute("onclick", "devoBloccare(true," + id + ",\"" + nome + "\",\"" + cognome + "\",this)");
                                     document.getElementById("pulsanteBloccoSblocco" + id).setAttribute("title", "Disabilita Badge");
                                     document.getElementById("pulsanteBloccoSblocco" + id).innerHTML = '<i class="fas fa-lock"></i>';
-                                    document.getElementById("bottoneBadgeRigeneratoDalServizio").click();  
+                                    document.getElementById("bottoneBadgeRigeneratoDalServizio").click();
                                 }, 1000);
                                 console.log("OK");
                             } else {
@@ -170,9 +169,9 @@
                         xhr.send(null);
                     }
                 </script>
-                
-                
-               
+
+
+
                 <div class="modal fade" tabindex="-2" role="dialog" id="confermaRigenerazione">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">

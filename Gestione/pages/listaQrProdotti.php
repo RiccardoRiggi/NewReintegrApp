@@ -19,13 +19,11 @@
                 
                 <!-- INIZIO CONTENUTO PAGINA -->
                 <div class="container-fluid ">
-                    <div class="row ">
-                        <div class="col-1"></div>
-                        <div class="col-4 p-2 bg-white">
-                            <h4 class="pl-3 font-weight-bold">Lista Etichette</h4>
-                        </div>
-                        <div class="col-6 p-2 text-right bg-white">
-                            <div class="btn-example p-1">
+                    
+                    <div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-danger">Lista etichette</h6>
+        <div class="btn-example p-1 text-right">
                                 <form method="POST" action="stampaQrProdottiDiGruppo.php" target="_blank">
                                     <input type="hidden" value="" name="listaIdPost" id="listaIdPost">
                                     <button id="bottoneStampaSelezionati" disabled type="submit" class="btn btn-danger">
@@ -38,18 +36,19 @@
 
                                 </form>
                             </div>
-                            <div class="col-1"></div>
-                        </div>
-                    </div>
-
-                    <div class="row pt-3">
+    </div>
+    <div class="card-body">
+    <div class="row ">
                         <div class="col-1"></div>
-                        <div class="col-10 bg-white p-3">
+                        <div class="col-10  p-3">
                             <?php echo generaTabellaEtichetteProdotti(); ?>
 
                         </div>
                         <div class="col-1"></div>
                     </div>
+    </div>
+</div>
+                    
 
                     <!-- CONTENUTO -->
 

@@ -1,5 +1,5 @@
 <?php include '../auth_components/controlloAutenticazione.php'; ?>
-<?php include '../integration/listaProdottiInt.php';?>
+<?php include '../integration/listaProdottiInt.php'; ?>
 <!DOCTYPE html>
 <html class="altezza-piena" lang="it">
 
@@ -14,18 +14,16 @@
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
                 <?php include './common/header.php'; ?>
-                
-                
-                
+
+
+
                 <!-- INIZIO CONTENUTO PAGINA -->
                 <div class="container-fluid ">
-                    <div class="row ">
-                        <div class="col-1"></div>
-                        <div class="col-4 p-2 bg-white">
-                            <h4 class="pl-3 font-weight-bold">Lista prodotti</h4>
-                        </div>
-                        <div class="col-6 p-2 text-right bg-white">
-                            <div class="btn-example p-1">
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-danger">Lista prodotti</h6>
+                            <div class="btn-example p-1 text-right">
                                 <a href="listaQrProdotti.php">
                                     <button type="button" class="btn btn-danger">
                                         <i class="fas fa-qrcode"></i> Stampa etichette
@@ -36,17 +34,18 @@
                                     </button></a>
 
                             </div>
-                            <div class="col-1"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row ">
+                                <div class="col-1"></div>
+                                <div class="col-10 bg-white p-3">
+                                    <?php echo recuperoListaProdotti(); ?>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="row pt-3">
-                        <div class="col-1"></div>
-                        <div class="col-10 bg-white p-3">
-                            <?php echo recuperoListaProdotti(); ?>
-                        </div>
-                        <div class="col-1"></div>
-                    </div>
 
                     <!-- CONTENUTO -->
 
