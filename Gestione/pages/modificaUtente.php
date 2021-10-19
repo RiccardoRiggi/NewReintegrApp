@@ -361,8 +361,8 @@ $utente = cercaUtente($_GET["id"]);
                                 </div>
                                 <div class="modal-body">
                                     <div class="text-center">
-                                        <i class="fas fa-id-badge testo-blu h1"></i>
-                                        <p>Rigenerare il badge di accesso comporta la disabilitazione dei badge cartacei stampati precedentemente per <?php echo $utente["nome"] . " " . $utente["cognome"];  ?>.<br>Sei sicuro di voler proseguire? </p>
+                                        <i class="fas fa-id-badge text-danger h1"></i>
+                                        <p> il badge di accesso comporta la disabilitazione dei badge cartacei stampati precedentemente per <?php echo $utente["nome"] . " " . $utente["cognome"];  ?>.<br>Sei sicuro di voler proseguire? </p>
                                     </div>
 
                                 </div>

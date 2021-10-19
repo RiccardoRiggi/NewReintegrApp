@@ -17,8 +17,8 @@
 
 <body class="bg-gradient-danger">
     <div class="container ">
-        <div class="row  justify-content-center ">
-            <div class="shadow align-self-center bg-white alert">
+        <div class="row  justify-content-center h-100">
+            <div class="shadow align-self-center bg-white alert h-100 mt-5">
                 <form action="installazione.php" method="post" autocomplete="off">
                     <div class="row">
                         <div class="col text-center">

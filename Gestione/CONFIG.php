@@ -6,7 +6,7 @@ define("SOGLIA_LOCKSCREEN",300);
 if(!defined("SOGLIA_PRODOTTI_IN_ESAURIMENTO"))
 define("SOGLIA_PRODOTTI_IN_ESAURIMENTO",10);
 if(!defined("IS_IN_PRODUZIONE"))
-define("IS_IN_PRODUZIONE",false);
+define("IS_IN_PRODUZIONE",true);
 if(!defined("INDIRIZZO_SERVER_DATABASE"))
 define("INDIRIZZO_SERVER_DATABASE","localhost");
 if(!defined("NOME_ISTANZA_DATABASE"))

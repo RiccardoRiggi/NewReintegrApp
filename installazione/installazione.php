@@ -86,7 +86,7 @@
         $stmt = $db->prepare($query);
 
         if ($stmt->execute()){
-            echo "Tabelle importate correttamente"."\n".PHP_EOL;
+            echo "<p>Tabelle importate correttamente</p>";
         }else{ 
             echo "Fail";
             $erroreGlobale = true;
@@ -106,7 +106,7 @@
         $stmt = $db->prepare($query);
 
         if ($stmt->execute()){
-            echo "Voci di menu importate con successo"."\n".PHP_EOL;
+            echo "<p>Voci di menu importate con successo</p>";
         }else{ 
             echo "Fail";
             $erroreGlobale = true;
@@ -127,7 +127,7 @@
         $stmt = $db->prepare($query);
 
         if ($stmt->execute()){
-            echo "Ruoli importati con successo"."\n".PHP_EOL;
+            echo "<p>Ruoli importati con successo</p>";
         }else{ 
             echo "Fail";
             $erroreGlobale = true;
@@ -148,7 +148,7 @@
         $stmt = $db->prepare($query);
 
         if ($stmt->execute()){
-            echo "Configurazione privilegi eseguita con successo"."\n".PHP_EOL;
+            echo "<p>Configurazione privilegi eseguita con successo</p>";
         }else{ 
             echo "Fail";
             $erroreGlobale = true;
@@ -173,12 +173,12 @@
         ";
 
         if (mysqli_query($conn, $sql)) {
-        echo "Utente super user creato con successo"."\n".PHP_EOL;
-        echo "Credenziali di accesso: "."\n".PHP_EOL;
-        echo "Email: ".$_POST["email"]."\n".PHP_EOL;
-        echo "Password: ".$_POST["password"]."\n";
-        echo "Sul documento troverai ulteriori istruzioni per proseguire nell'installazione\n".PHP_EOL;
-        echo "Verrai rediretto sulla pagina di login fra pochi secondi...\n".PHP_EOL;
+        echo "<p>Utente super user creato con successo</p>";
+        echo "<p>Credenziali di accesso: </p>";
+        echo "<p>Email: ".$_POST["email"]."</p>";
+        echo "<p>Password: quella scelta da te al momento dell'installazione".$_POST["password"]."</p>";
+        echo "<p>Sul documento e alla voce Documentazione troverai ulteriori istruzioni per proseguire nell'installazione</p>";
+        echo "<p>Verrai rediretto sulla pagina di login fra pochi secondi...</p>".PHP_EOL;
         } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         $erroreGlobale = true;
