@@ -2,7 +2,6 @@
 
 include '../db_components/dbGestione.php';
 
-
 function selezionaListaUtenti(){
     $conn = apriConnessione();
     $sql = 'SELECT isQrBloccato, utente_id a, AES_DECRYPT(nome,\''.CHIAVE_DI_CIFRATURA.'\') as nome, AES_DECRYPT(cognome,\''.CHIAVE_DI_CIFRATURA.'\') as cognome, (SELECT count(*) FROM reintegrazioni WHERE utente_id = a) as reintegri, DATE_FORMAT(data_ultimo_accesso, "%H:%i - %d/%m/%Y") as data_ultimo_accesso, numero_tessera FROM utenti WHERE isEliminato = false ORDER BY cognome, nome DESC';
@@ -37,7 +36,7 @@ function getListaComuni(){
 
 function salvaUtente($nome,$cognome,$sesso,$data_di_nascita,$numero_dae,$isCertificato,$comune_residenza,$via,$civico,$interno,$numero_tessera,$email,$password,$operatore){
     $conn = apriConnessione();
-    $sql = "INSERT INTO utenti (nome,cognome,sesso,data_di_nascita,numero_dae,isCertificato,comune_residenza,via,civico,interno,numero_tessera,email,password,codice_qr,operatore_assegnazione_token) VALUE (AES_ENCRYPT('".$nome."','".CHIAVE_DI_CIFRATURA."') ,AES_ENCRYPT('".$cognome."','".CHIAVE_DI_CIFRATURA."'),AES_ENCRYPT('".$sesso."','".CHIAVE_DI_CIFRATURA."'),'".$data_di_nascita."','".$numero_dae."','".$isCertificato."',AES_ENCRYPT('".$comune_residenza."','".CHIAVE_DI_CIFRATURA."'),AES_ENCRYPT('".$via."','".CHIAVE_DI_CIFRATURA."'),AES_ENCRYPT('".$civico."','".CHIAVE_DI_CIFRATURA."'),AES_ENCRYPT('".$interno."','".CHIAVE_DI_CIFRATURA."'),'".$numero_tessera."',AES_ENCRYPT('".$email."','".CHIAVE_DI_CIFRATURA."'),'".$password."','".generaQrCode()."',AES_ENCRYPT('".$operatore."','".CHIAVE_DI_CIFRATURA."'))";
+    $sql = "INSERT INTO utenti (nome,cognome,sesso,data_di_nascita,numero_dae,isCertificato,comune_residenza,via,civico,interno,numero_tessera,email,password,codice_qr,operatore_assegnazione_token,codice_ruolo) VALUE (AES_ENCRYPT('".$nome."','".CHIAVE_DI_CIFRATURA."') ,AES_ENCRYPT('".$cognome."','".CHIAVE_DI_CIFRATURA."'),AES_ENCRYPT('".$sesso."','".CHIAVE_DI_CIFRATURA."'),'".$data_di_nascita."','".$numero_dae."','".$isCertificato."',AES_ENCRYPT('".$comune_residenza."','".CHIAVE_DI_CIFRATURA."'),AES_ENCRYPT('".$via."','".CHIAVE_DI_CIFRATURA."'),AES_ENCRYPT('".$civico."','".CHIAVE_DI_CIFRATURA."'),AES_ENCRYPT('".$interno."','".CHIAVE_DI_CIFRATURA."'),'".$numero_tessera."',AES_ENCRYPT('".$email."','".CHIAVE_DI_CIFRATURA."'),'".$password."','".generaQrCode()."',AES_ENCRYPT('".$operatore."','".CHIAVE_DI_CIFRATURA."'),1)";
     $conn->query($sql);
     $id=$conn->insert_id;
     chiudiConnessione($conn);
@@ -48,8 +47,8 @@ function salvaUtente($nome,$cognome,$sesso,$data_di_nascita,$numero_dae,$isCerti
 function aggiornaUtente($nome,$cognome,$sesso,$data_di_nascita,$numero_dae,$isCertificato,$comune_residenza,$via,$civico,$interno,$numero_tessera,$email,$password,$id){
     $conn = apriConnessione();
     $sql = "UPDATE utenti SET nome= AES_ENCRYPT( ? ,'".CHIAVE_DI_CIFRATURA."'), cognome= AES_ENCRYPT( ? ,'".CHIAVE_DI_CIFRATURA."'), sesso= AES_ENCRYPT('".$sesso."','".CHIAVE_DI_CIFRATURA."'), data_di_nascita= '".$data_di_nascita."', numero_dae= '".$numero_dae."', isCertificato= '".$isCertificato."', comune_residenza= AES_ENCRYPT('".$comune_residenza."','".CHIAVE_DI_CIFRATURA."'), via= AES_ENCRYPT('".$via."','".CHIAVE_DI_CIFRATURA."'), civico= AES_ENCRYPT('".$civico."','".CHIAVE_DI_CIFRATURA."'), interno= AES_ENCRYPT('".$interno."','".CHIAVE_DI_CIFRATURA."'), numero_tessera= ? , email= AES_ENCRYPT(?,'".CHIAVE_DI_CIFRATURA."') ";
-    if($password!="")
-        $sql = $sql." , password = '".$password."'";
+    if($password!=null)
+        $sql = $sql." , password = '".md5($password)."'";
     $sql = $sql." WHERE utente_id = ? ";
     resultPreparedCinque($conn,$sql,$nome,$cognome,$numero_tessera,$email,$id);
     chiudiConnessione($conn);

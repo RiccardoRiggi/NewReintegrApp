@@ -19,7 +19,7 @@ if (isset($_POST["email"], $_POST["password"])) {
 </head>
 
 <body class="altezza-piena neutral-1-bg-a1 bg-gradiendt-danger">
-    <div class="container-fluid h-100 d-inline-block bg-gradient-danger">
+    <div class="container-fluid  d-inline-block bg-gradient-danger">
         <div class="row  justify-content-center h-100">
             <div class="shadow align-self-center p-5 bg-white alert">
                 <form action="login.php" method="post">

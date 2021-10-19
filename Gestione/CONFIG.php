@@ -1,6 +1,6 @@
 <?php
-if(!defined("NOME_ASSOCIAZIONE"))
-define("NOME_ASSOCIAZIONE","Croce Rossa Italiana - Comitato Val di Riggi");
+if(!defined("NOME_ASSOCIAZIONE")) 
+define("NOME_ASSOCIAZIONE","Associazione");
 if(!defined("SOGLIA_LOCKSCREEN"))
 define("SOGLIA_LOCKSCREEN",300);
 if(!defined("SOGLIA_PRODOTTI_IN_ESAURIMENTO"))
@@ -18,5 +18,5 @@ define("PASSWORD_DATABASE","");
 if(!defined("NUMERO_VERSIONE"))
 define("NUMERO_VERSIONE","2.0.0");
 if(!defined("CHIAVE_DI_CIFRATURA"))
-define("CHIAVE_DI_CIFRATURA","CHIAVE_DI_CIFRATURA");
+define("CHIAVE_DI_CIFRATURA","cifratura");
 ?>

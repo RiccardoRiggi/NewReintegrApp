@@ -1,5 +1,6 @@
 <?php include '../auth_components/controlloAutenticazione.php'; ?>
 
+
 <?php
 include('../integration/modificaUtenteInt.php');
 
@@ -7,7 +8,7 @@ if (!isset($_GET["id"]) || $_GET["id"] == "")
     header('location: listaUtenti.php');
 
 if (isset($_POST["nome"]))
-    aggiornaUtenteInBaseDati($_POST["nome"], $_POST["cognome"], $_POST["sesso"], $_POST["data_di_nascita"], $_POST["numero_dae"], $_POST["isCertificato"], $_POST["comune_residenza"], $_POST["via"], $_POST["civico"], $_POST["interno"], $_POST["numero_tessera"], $_POST["email"], md5($_POST["password"]), $_POST["id"]);
+    aggiornaUtenteInBaseDati($_POST["nome"], $_POST["cognome"], $_POST["sesso"], $_POST["data_di_nascita"], $_POST["numero_dae"], $_POST["isCertificato"], $_POST["comune_residenza"], $_POST["via"], $_POST["civico"], $_POST["interno"], $_POST["numero_tessera"], $_POST["email"], $_POST["password"], $_POST["id"]);
 
 $utente = cercaUtente($_GET["id"]);
 

@@ -17,7 +17,7 @@ if (!function_exists('apriConnessione')) {
                 $resultTwo = resultPreparedTre($conn,$sql,$row["utente_id"],$email,$psw);
                 if ($resultTwo->num_rows > 0) {
                     while ($row = $resultTwo->fetch_assoc()) {
-                        if ($row["codice_ruolo"] == 0) {
+                        if ($row["codice_ruolo"] == 1) {
                             chiudiConnessione($conn);
                             return "Utente non abilitato ad accedere<br>a questa parte dell'applicativo!";
                         } else if ($row["isBloccato"]) {
