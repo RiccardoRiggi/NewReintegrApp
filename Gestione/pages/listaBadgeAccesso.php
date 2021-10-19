@@ -105,8 +105,6 @@
                                 setTimeout(() => {
                                     if (devoBloccare) {
                                         bottone.setAttribute("onclick", "devoBloccare(false," + id + ",\"" + nome + "\",\"" + cognome + "\",this)");
-                                        document.getElementById("nomeBloccato").innerHTML = nome;
-                                        document.getElementById("cognomeBloccato").innerHTML = cognome;
                                         document.getElementById("stato" + id).innerHTML = '<i title="Badge disabilitato" class="h3 text-danger-rosso-solo far fa-times-circle"></i>';
                                         document.getElementById("bottoneBadgeBloccatoDalServizio").click();
                                         bottone.setAttribute("title", "Abilita Badge");
@@ -114,8 +112,6 @@
 
                                     } else {
                                         bottone.setAttribute("onclick", "devoBloccare(true," + id + ",\"" + nome + "\",\"" + cognome + "\",this)");
-                                        document.getElementById("nomeSbloccato").innerHTML = nome;
-                                        document.getElementById("cognomeSbloccato").innerHTML = cognome;
                                         document.getElementById("stato" + id).innerHTML = '<i title="Badge abilitato" class="h3 verde far fa-check-circle"></i>';
                                         document.getElementById("bottoneBadgeSbloccatoDalServizio").click();
                                         bottone.setAttribute("title", "Disabilita Badge");

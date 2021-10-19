@@ -220,7 +220,7 @@ if (isset($_GET["id"])) {
                                                 }
                                             }
                                         };
-                                        xmlhttp.open("GET", "../API/zaini.php?c=a&id=" + id + "&sacca=" + idSacca + "&qtaMax=" + qtaMax, true);
+                                        xmlhttp.open("GET", "../api/zaini.php?c=a&id=" + id + "&sacca=" + idSacca + "&qtaMax=" + qtaMax, true);
                                         xmlhttp.send();
                                     }
                                 }
@@ -274,7 +274,7 @@ if (isset($_GET["id"])) {
                                                 }
                                             }
                                         };
-                                        var url = "../API/zaini.php?c=u&id=" + idPns + "&qtaAtt=" + qtaAtt + "&qtaTot=" + qtaTot + "&dataScad=" + dataScad + "&codiceSacca=" + codiceSacca + "&codiceProdotto=" + codiceProdotto + "&labelAggiunta=" + qtaAttBackup;
+                                        var url = "../api/zaini.php?c=u&id=" + idPns + "&qtaAtt=" + qtaAtt + "&qtaTot=" + qtaTot + "&dataScad=" + dataScad + "&codiceSacca=" + codiceSacca + "&codiceProdotto=" + codiceProdotto + "&labelAggiunta=" + qtaAttBackup;
                                         xmlhttppppp.open("GET", url, true);
                                         xmlhttppppp.send(null);
                                     }
@@ -313,7 +313,7 @@ if (isset($_GET["id"])) {
                                                 $('#tabellaProdottiNelleSacche').DataTable().draw();
                                             }
                                         };
-                                        xmlhttp.open("GET", "../API/zaini.php?c=sin&id=" + str, true);
+                                        xmlhttp.open("GET", "../api/zaini.php?c=sin&id=" + str, true);
                                         xmlhttp.send();
                                     }
                                 }
@@ -331,7 +331,7 @@ if (isset($_GET["id"])) {
                                                 $('#tabellaProdottiNonNelleSacche').DataTable().draw();
                                             }
                                         };
-                                        xmlhttp.open("GET", "../API/zaini.php?c=sout&id=" + str, true);
+                                        xmlhttp.open("GET", "../api/zaini.php?c=sout&id=" + str, true);
                                         xmlhttp.send();
                                     }
                                 }

@@ -293,7 +293,7 @@ if (isset($_GET["id"])) {
                                     }
                                 }
                             };
-                            var url = "../API/sacche.php?c=u&id=" + idPns + "&qtaAtt=" + qtaAtt + "&qtaTot=" + qtaTot + "&dataScad=" + dataScad + "&codiceSacca=" + codiceSacca + "&codiceProdotto=" + codiceProdotto + "&labelAggiunta=" + qtaAttBackup;
+                            var url = "../api/sacche.php?c=u&id=" + idPns + "&qtaAtt=" + qtaAtt + "&qtaTot=" + qtaTot + "&dataScad=" + dataScad + "&codiceSacca=" + codiceSacca + "&codiceProdotto=" + codiceProdotto + "&labelAggiunta=" + qtaAttBackup;
                             xmlhttppppp.open("GET", url, true);
                             xmlhttppppp.send(null);
                         }
@@ -332,7 +332,7 @@ if (isset($_GET["id"])) {
                                     $('#tabellaProdottiNelleSacche').DataTable().draw();
                                 }
                             };
-                            xmlhttp.open("GET", "../API/sacche.php?c=sin&id=" + str, true);
+                            xmlhttp.open("GET", "../api/sacche.php?c=sin&id=" + str, true);
                             xmlhttp.send();
                         }
                     }
@@ -350,7 +350,7 @@ if (isset($_GET["id"])) {
                                     $('#tabellaProdottiNonNelleSacche').DataTable().draw();
                                 }
                             };
-                            xmlhttp.open("GET", "../API/sacche.php?c=sout&id=" + str, true);
+                            xmlhttp.open("GET", "../api/sacche.php?c=sout&id=" + str, true);
                             xmlhttp.send();
                         }
                     }
