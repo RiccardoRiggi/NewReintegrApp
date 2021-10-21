@@ -21,10 +21,21 @@ ReintegrApp è una Web Application gestionale sviluppata senza fini di lucro da 
  - PHP
  
 ## Installazione
-
-  
-
+![Schermata di installazione](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/installazione.png)
+Per avviare l'installazione bisogna entrare tramite il browser all'interno della cartella ./installazione. Per procedere sono richieste le seguenti informazioni:
+ - Nome dell'ente/associazione
+ - Indirizzo ip del database MySQL
+ - Nome utente del database
+ - Password per accedere al database
+ - Chiave di cifratura per la crittografia delle informazioni personali
+ - Indirizzo email dell'utente amministratore
+ - Password dell'utente amministratore
+FOTO_SCHERMATA ESITO BUON FINE INSTALLAZIONE
+Dopo aver cliccato su Avvia installazione una schermata confermerà il buon esito dell'operazione. In automatico verrete ridiretti sulla schermata di autenticazione dove saranno richiesti indirizzo email e password dell'utente amministratore. La schermata home confermerà il buon esito dell'operazione.
+Adesso è necessario cancellare la cartella ./installazione per impedire ad altri utenti di sovrascrivere il database. Si consiglia sempre di effettuare backup periodici, compreso il pacchetto appena scaricato.
+---   
 ## Documentazione
+Di seguito potete trovare una documentazione che illustra le funzionalità di quest'applicazione web. 
 
 #### Menu rapido per i prodotti
 
@@ -120,3 +131,7 @@ Il codice sorgente viene rilasciato con licenza [MIT](https://github.com/Riccard
 ## Garanzia limitata ed esclusioni di responsabilità
 
 Il software viene fornito "così com'è", senza garanzie. Riccardo Riggi non concede alcuna garanzia per il software e la relativa documentazione in termini di correttezza, accuratezza, affidabilità o altro. L'utente si assume totalmente il rischio utilizzando questo applicativo.
+
+## In conclusione
+Il nome deriva 
+Sono consapevole che il codice possa essere notevolmente migliorato. Questo progetto è datato Aprile 2020 e in una prima versione avevo utilizzato Boostrap Italia, solo ultimamente ho deciso di aggiornare l'interfaccia grafica e pubblicarlo su GitHub nella speranza che questo software possa essere utile anche a qualcuno.
