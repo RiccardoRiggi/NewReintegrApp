@@ -176,9 +176,9 @@
         echo "<p>Utente super user creato con successo</p>";
         echo "<p>Credenziali di accesso: </p>";
         echo "<p>Email: ".$_POST["email"]."</p>";
-        echo "<p>Password: quella scelta da te al momento dell'installazione".$_POST["password"]."</p>";
+        echo "<p>Password: quella scelta da te al momento dell'installazione</p>";
         echo "<p>Sul documento e alla voce Documentazione troverai ulteriori istruzioni per proseguire nell'installazione</p>";
-        echo "<p>Verrai rediretto sulla pagina di login fra pochi secondi...</p>".PHP_EOL;
+        echo "<p>Verrai portato automaticamente sulla pagina di login fra pochi secondi...</p>".PHP_EOL;
         } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         $erroreGlobale = true;
