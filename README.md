@@ -112,11 +112,11 @@ Dalla pagina lista checklist è possibile selezionare un mezzo per stampare la r
 ### Reintegri
 ### Reintegrare un mezzo
 Per rendere più semplice e veloce l'operazione di tracciatura dei movimenti all'interno del magazzino viene utilizzata una web application progettata appositamente per dispositivi mobile. L'autenticazione può avvenire tramite l'inserimento di email e password oppure tramite la scansione del proprio token cartaceo. 
-FOTO_DEI_DUE_LOGIN_FATTA_CON_MOCKUP
+![Schermata con login via codice qr e login via email e password sull'applicazione web mobile](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/autenticazioneMobile.png)
 Successivamente una schermata illustrerà alcune statistiche come la data dell'ultimo accesso, il numero di veicoli ripristinati, il numero di prodotti rimessi a posto e il numero di messaggi di segnalazione inviati.
-FOTO_SCHERMATA_HOME
+![Schermata home dell'applicazione web mobile](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/homeMobile.png)
 Cliccando su reintegra un mezzo è possibile scegliere il veicolo e successivamente inquadrare il codice qr del prodotto scelto. Per ogni prodotto possiamo scegliere la quantità e, in caso di numeri non congruenti (l'applicazione segnala 10 articoli, ma nel magazzino ne sono presenti solamente 7) è possibile notificare al responsabile questa discrepanza. 
-FOTO_SCANSIONE_QR + FOTO_PRODOTTO_MOBILE
+![Schermata per la selezione e conferma del prodotto](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/sceltaProdottoMobile.png)
 Terminata la lista dei materiali da ripristinare è possibile cliccare sul pulsante "Ho finito" per terminare l'operazione.
 ### Lista reintegri
 FOTO_LISTA_REINTEGRI
@@ -126,7 +126,7 @@ La classifica dei reintegri mostra in ordine decrescente gli utenti in base al n
 - ---
 ### Messaggi
 #### Invio messaggi
-FOTO_SCHERMATA_INVIA_MESSAGGIO
+![Schermata per l'invio del messaggio](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/invioMessaggio.png)
 Dalla web application mobile, tramite il menu di navigazione presente a fondo pagina, è possibile accedere alla pagina per poter inviare un messaggio ai magazzinieri. 
 #### Lista messaggi
 FOTO_LISTA_MESSAGGI
