@@ -1,5 +1,5 @@
 # ReintegrApp
- FOTO_HOMEPAGE_CON_CLASSIFICA_POPOLATA_E_GRAFICO 
+ ![Homepage](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/homepage.png)
 
 ReintegrApp è una Web Application gestionale sviluppata senza fini di lucro da [Riccardo Riggi](https://www.riccardoriggi.it/) per organizzazioni di volontariato che operano nel campo dell'emergenza/urgenza
 
@@ -36,7 +36,7 @@ Adesso è necessario cancellare la cartella ./installazione per impedire ad altr
 ---   
 ## Documentazione
 
-FOTO_HOMEPAGE
+ ![Homepage](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/homepage.png)
 Di seguito potete trovare una documentazione che illustra le funzionalità di quest'applicazione web. Dalla homepage è possibile vedere la classifica degli utenti più attivi, il grafico dei movimenti dell'ultima settimana e il menu rapido per i prodotti scaduti, in scadenza, da reintegrare o da ordinare perché esauriti. 
 - -- 
 ### Anagrafica
@@ -130,10 +130,12 @@ La classifica dei reintegri mostra in ordine decrescente gli utenti in base al n
 Dalla web application mobile, tramite il menu di navigazione presente a fondo pagina, è possibile accedere alla pagina per poter inviare un messaggio ai magazzinieri. 
 #### Lista messaggi
 FOTO_LISTA_MESSAGGI
+
 La lista messaggi offre la possibilità di leggere le comunicazioni inviate da parte degli utenti.
 ### Notifiche
 #### Lista notifiche
 FOTO_LISTA_NOTIFICHE
+
 Da questa pagina è possibile vedere le segnalazioni di prodotti con quantità non corrispondenti. 
 
 ## Privacy - Sicurezza - GDPR
