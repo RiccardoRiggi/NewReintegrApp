@@ -35,7 +35,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="nome_associazione">Nome dell'associazione</label>
-                                <input value="Associazione" type="text" name="nome_associazione" required class="form-control" id="nome_associazione" placeholder="Inserire il nome dell'associazione" required>
+                                <input  type="text" name="nome_associazione" required class="form-control" id="nome_associazione" placeholder="Inserire il nome dell'associazione" required>
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="indirizzo_server_database">Host</label>
-                                <input value="localhost" type="text" name="indirizzo_server_database" required class="form-control" id="indirizzo_server_database" placeholder="Inserire l'host" autocomplete="off">
+                                <input type="text" name="indirizzo_server_database" required class="form-control" id="indirizzo_server_database" placeholder="Inserire l'host" autocomplete="off">
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="username_database">Utente del database</label>
-                                <input value="root" autocomplete="off" type="text" name="username_database" required class="form-control" id="username_database" placeholder="Inserire l'username" autocomplete="off">
+                                <input  autocomplete="off" type="text" name="username_database" required class="form-control" id="username_database" placeholder="Inserire l'username" autocomplete="off">
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="password_database">Password del database</label>
-                                <input value="" type="password" name="password_database" class="form-control" id="password_database" placeholder="Inserire la password" autocomplete="off">
+                                <input  type="password" name="password_database" class="form-control" id="password_database" placeholder="Inserire la password" autocomplete="off">
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="chiave_di_cifratura">Chiave di cifratura</label>
-                                <input value="cifratura" type="password" name="chiave_di_cifratura" required class="form-control" id="chiave_di_cifratura" placeholder="Inserire una chiave di cifratura" maxlength="15" autocomplete="off">
+                                <input  type="password" name="chiave_di_cifratura" required class="form-control" id="chiave_di_cifratura" placeholder="Inserire una chiave di cifratura" maxlength="15" autocomplete="off">
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="email">Email dell'utente amministratore</label>
-                                <input value="info@ghiroinformatico.net" type="email" name="email" required class="form-control" id="email" placeholder="Inserire l'indirizzo email" autocomplete="off">
+                                <input  type="email" name="email" required class="form-control" id="email" placeholder="Inserire l'indirizzo email" autocomplete="off">
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                         <div class="col">
                             <div class="form-group mb-3">
                                 <label for="password">Password dell'utente amministratore</label>
-                                <input value="Alice02" type="password" name="password" class="form-control" id="password" required placeholder="Digitare la password" autocomplete="off">
+                                <input type="password" name="password" class="form-control" id="password" required placeholder="Digitare la password" autocomplete="off">
                             </div>
                         </div>
                     </div>
