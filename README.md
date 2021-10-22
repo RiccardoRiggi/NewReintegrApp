@@ -150,7 +150,7 @@ dimenticata, può essere reimpostata, ma non recuperata
 
 ---
 #### Protezione contro tentativi di Brute Force
-FOTO_SCHERMATA_BLOCCO
+![Schermata di blocco contro bruteforce](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/bloccato.png)
 Per prevenire tentativi di attacco Brute Force è stato implementato un sistema di controllo delle autenticazioni fallite, dopo 10 tentativi l'applicazione bloccherà l'accesso a quel determinato indirizzo ip che potrà essere sbloccato manualmente. Ogni indirizzo ip prima di venire salvato viene elaborato con una funzione di hash che lo rende anonimo.
 
 ---
@@ -165,6 +165,7 @@ Lasciando l'applicazione ferma sulla stessa pagina per un determinato periodo, v
 
 ---
 #### Logout automatico dalle altre postazioni
+![Schermatadi login](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/login.png)
 Il software è progettato in maniera tale da permettere una sola sessione attiva per utente. Ad ogni nuova autenticazione le sessioni precedenti verranno disconnesse.
 
 ---
