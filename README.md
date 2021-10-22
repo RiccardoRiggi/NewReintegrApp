@@ -22,7 +22,7 @@ ReintegrApp è una Web Application gestionale sviluppata senza fini di lucro da 
  
 ## Installazione
 ![Schermata di installazione](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/installazione.png)
-Per avviare l'installazione bisogna entrare tramite il browser all'interno della cartella ./installazione. Per procedere sono richieste le seguenti informazioni:
+Per avviare l'installazione bisogna entrare tramite il browser all'interno della cartella **./installazione**. Per procedere sono richieste le seguenti informazioni:
  - Nome dell'ente/associazione
  - Indirizzo ip del database MySQL
  - Nome utente del database
@@ -30,9 +30,11 @@ Per avviare l'installazione bisogna entrare tramite il browser all'interno della
  - Chiave di cifratura per la crittografia delle informazioni personali
  - Indirizzo email dell'utente amministratore
  - Password dell'utente amministratore
+ 
 ![Schermata di conferma installazione](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/confermaInstallazione.png)
+
 Dopo aver cliccato su Avvia installazione una schermata confermerà il buon esito dell'operazione. In automatico verrete ridiretti sulla schermata di autenticazione dove saranno richiesti indirizzo email e password dell'utente amministratore. La schermata home confermerà il buon esito dell'operazione.
-Adesso è necessario cancellare la cartella ./installazione per impedire ad altri utenti di sovrascrivere il database. Si consiglia sempre di effettuare backup periodici, compreso il pacchetto appena scaricato.
+**Adesso è necessario cancellare la cartella ./installazione per impedire ad altri utenti di sovrascrivere il database**. Si consiglia sempre di effettuare backup periodici, compreso il pacchetto appena scaricato.
 ## Documentazione
 
  ![Homepage](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/homepage.png)
