@@ -160,12 +160,12 @@ In qualunque momento è possibile bloccare l'accesso all'applicazione da parte d
 
 ---
 #### Blocco in caso di inattività da parte dell'operatore
-FOTO_SCHERMATA_BLOCCO_CON_PSW
+![Schermata di blocco contro bruteforce](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/bloccato.png)
 Lasciando l'applicazione ferma sulla stessa pagina per un determinato periodo, variabile dal file di configurazione, entrerà in automatico un sistema di protezione che bloccherà la sessione e la farà proseguire solamente previo inserimento di password.
 
 ---
 #### Logout automatico dalle altre postazioni
-![Schermatadi login](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/login.png)
+![Schermatadi login](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/bloccoPassword.png)
 Il software è progettato in maniera tale da permettere una sola sessione attiva per utente. Ad ogni nuova autenticazione le sessioni precedenti verranno disconnesse.
 
 ---
