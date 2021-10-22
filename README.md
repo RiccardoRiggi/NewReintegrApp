@@ -4,9 +4,9 @@
 ReintegrApp è una Web Application gestionale sviluppata senza fini di lucro da [Riccardo Riggi](https://www.riccardoriggi.it/) per organizzazioni di volontariato che operano nel campo dell'emergenza/urgenza
 
 ## Bom / Diba
-#### Database
+
+#### Database/Linguaggi/Framework/Librerie/Tecnologie
  - MySQL
-#### Linguaggi/Framework/Librerie/Tecnologie
  - HTML
  - CSS
  - JavaScript
@@ -30,10 +30,9 @@ Per avviare l'installazione bisogna entrare tramite il browser all'interno della
  - Chiave di cifratura per la crittografia delle informazioni personali
  - Indirizzo email dell'utente amministratore
  - Password dell'utente amministratore
-FOTO_SCHERMATA_ESITO_BUON_FINE_INSTALLAZIONE
+![Schermata di conferma installazione](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/confermaInstallazione.png)
 Dopo aver cliccato su Avvia installazione una schermata confermerà il buon esito dell'operazione. In automatico verrete ridiretti sulla schermata di autenticazione dove saranno richiesti indirizzo email e password dell'utente amministratore. La schermata home confermerà il buon esito dell'operazione.
 Adesso è necessario cancellare la cartella ./installazione per impedire ad altri utenti di sovrascrivere il database. Si consiglia sempre di effettuare backup periodici, compreso il pacchetto appena scaricato.
----   
 ## Documentazione
 
  ![Homepage](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/homepage.png)
