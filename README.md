@@ -165,7 +165,7 @@ Lasciando l'applicazione ferma sulla stessa pagina per un determinato periodo, v
 
 ---
 #### Logout automatico dalle altre postazioni
-![Schermatadi login](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/.png)
+![Schermatadi login](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/login.png)
 Il software è progettato in maniera tale da permettere una sola sessione attiva per utente. Ad ogni nuova autenticazione le sessioni precedenti verranno disconnesse.
 
 ---
