@@ -42,23 +42,23 @@ Di seguito potete trovare una documentazione che illustra le funzionalità di qu
 - -- 
 ### Anagrafica
 #### Aggiungi utente
-FOTO_AGGIUNGI_UTENTE
+![Schermata aggiungi utente](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/aggiungiUtente.png)
 Sotto la voce anagrafica è disponibile la funzionalità per creare un nuovo utente. I campi obbligatori sono nome, cognome, numero di tessera, email e password (per consentirgli successivamente di accedere all'applicativo). I campi facoltativi sono il sesso, la data di nascita, il numero di abilitazione DAE, il possesso della certificazione per l'emergenza, il comune di residenza, l'indirizzo, il civico e l'interno. Dopo il salvataggio verrete portati nella pagina di modifica dell'utente.
 #### Lista utenti
-FOTO_LISTA_UTENTI
+![Schermata lista utenti](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/listaUtenti.png)
 Dalla lista utenti è possibile accedere alla pagina di modifica, stampare il codice qr che permette l'autenticazione agli utenti dalla web app mobile ed eliminare la singola occorrenza. 
 
 #### Gestione badge
-FOTO_LISTA_GESTIONE_BADGE
+![Schermata lista badge](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/gestioneBadge.png)
 Dalla pagina di gestione badge è possibile procedere alla stampa dei codici di accesso, vedere lo stato di attivazione di ogni singolo account, variarlo e rigenerare il qr code in caso di smarrimento o furto. 
 #### Gestione ruoli
-FOTO_GESTIONE_RUOLI
+![Schermata lista ruoli](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/gestioneRuoli.png)
 Dalla pagina di gestione ruoli è possibile variare il ruolo di ogni singolo utente. Durante la procedura di installazione vengono creati quattro ruoli con funzioni specifiche:
 
- - Volontario: può accedere solamente alla parte dell'applicativo adibita alla registrazione dei movimenti del magazzino
- - Caposquadra: può accedere al gestionale per stampare le checklist dei mezzi da compilare ad ogni inizio turno
- - Magazziniere: può accedere a tutta la gestione del magazzino, messaggi, notifiche
- - Super utente: ha tutti i privilegi
+ - **Volontario**: può accedere solamente alla parte dell'applicativo adibita alla registrazione dei movimenti del magazzino
+ - **Caposquadra**: può accedere al gestionale per stampare le checklist dei mezzi da compilare ad ogni inizio turno
+ - **Magazziniere**: può accedere a tutta la gestione del magazzino, messaggi, notifiche
+ - **Super utente**: ha tutti i privilegi
 
 - ---
 ### Veicoli
