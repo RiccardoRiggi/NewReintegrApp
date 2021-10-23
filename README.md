@@ -63,39 +63,39 @@ Dalla pagina di gestione ruoli è possibile variare il ruolo di ogni singolo ute
 - ---
 ### Veicoli
 #### Aggiungi veicolo
-FOTO_AGGIUNGI_VEICOLO
-Dalla pagina aggiungi veicolo è possibile inserire un nuovo mezzo nel sistema. Le informazioni richieste sono il nome, il codice di riconoscimento (identificativo radio), la targa e il tipo di veicolo. Ogni veicolo può contenere degli zaini, delle sacche e dei prodotti.
+![Schermata veicolo](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/aggiungiVeicolo.png)
+Dalla pagina aggiungi veicolo è possibile inserire un nuovo mezzo nel sistema. Le informazioni richieste sono il nome, il codice di riconoscimento (identificativo radio), la targa e il tipo di veicolo. Ogni veicolo può contenere degli zaini, delle sacche e dei prodotti. Quando andiamo ad inserire un prodotto in un veicolo, zaino, oppure sacca per la prima volta, dobbiamo specificare il quantitativo massimo e successivamente la quantità inserita in maniera effettiva e la data di scadenza. Per i successivi aggiornamenti solamente la quantità inserita e la data di scadenza, se diversa da quella inserita precedentemente. 
 
 #### Lista veicoli
-FOTO_LISTA_VEICOLI
+![Schermata lista veicoli](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/listaVeicoli.png)
 In questa pagina è possibile vedere l'elenco dei veicoli, modificarne i dettagli ed eliminarli.
 - -------
 ### Zaini
 #### Aggiungi zaino
-FOTO_AGGIUNGI_ZAINO
+![Schermata zaini](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/aggiungiZaino.png)
 Grazie a questa pagina è possibile registrare dei nuovi zaini, bisogna inserire un nome e, necessariamente, associarlo ad un veicolo. Ogni zaino può contenere delle sacche e dei prodotti. 
 #### Lista zaini
-FOTO_LISTA_ZAINI
+![Schermata lista zaini](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/listaZaini.png)
 In questa pagina è possibile vedere l'elenco degli zaini, modificarne i dettagli ed eliminarli.
 - ---
 ### Sacche
 #### Aggiungi sacca
-FOTO_AGGIUNGI_SACCA
-Dalla pagina aggiungi sacca è possibile aggiungere l'oggetto al database. Bisogna inserire il nome, il colore e la posizione che può essere dentro uno zaino oppure dentro un veicolo. Ogni sacca può contenere una lista di prodotti. 
+![Schermata sacca](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/aggiungiSacca.png)
+Dalla pagina aggiungi sacca è possibile aggiungere l'oggetto al database. Bisogna inserire il nome, il colore e la posizione che può essere dentro uno zaino oppure dentro un veicolo. Ogni sacca può contenere una lista di prodotti. Al salvataggio viene chiesto un numero di sigillo da applicare.
 #### Lista sacche
-FOTO_LISTA_SACCHE
+![Schermata lista sacche](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/listaSacche.png)
 In questa pagina è possibile vedere l'elenco delle sacche, modificarne i dettagli ed eliminarle.
 - ---
 ### Prodotti
 #### Aggiungi prodotto
-FOTO_AGGIUNGI_PRODOTTO
+![Schermata lista zaini](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/aggiungiProdotto.png)
 Dalla pagina aggiungi prodotto è possibile inserire l'elenco dei presidi, materiali, attrezzatura e altro presente all'interno del magazzino. Bisogna inserire un nume, eventualmente una descrizione, il quantitativo totale presente attualmente nel magazzino e il quantitativo disponibile per il personale che addetto a reintegrare i mezzi. Ad ogni ripristino di mezzi i quantitativi verranno aggiornati automaticamente.
 #### Lista prodotti
-FOTO_LISTA_PRODOTTI
+![Schermata lista prodotti](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/listaProdotti.png)
 In questa pagina è possibile vedere l'elenco dei prodotti, modificarne le quantità ed eliminarli.
 
 #### Lista etichette
-FOTO_LISTA_ETICHETTE
+![Schermata lista etichette](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/listaEtichette.png)
 Dalla lista delle etichette è possibile stampare i QR code identificativi dei singoli prodotti da applicare nei relativi scompartimenti del magazzino. Ogni singolo utente, tramite la web application mobile potrà scansionare il codice per identificare l'articolo e confermare il movimento.
 
 #### Menu rapido per i prodotti
@@ -103,11 +103,11 @@ Dalla homepage, cliccando su una delle quattro card colorate è possibile accede
 
 ### Checklist
 #### Creazione di una checklist
-FOTO_ESEMPIO_CHECKLIST
+![Schermata checklist](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/checklist.png)
 Configurando mezzi, zaini, sacche e prodotti il software è in grado in maniera automatica di generare una checklist per ogni singolo veicolo.
 
 #### Stampare una checklist
-FOTO_LISTA_CHECKLIST
+![Schermata lista checklist](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/listaChecklist.png)
 Dalla pagina lista checklist è possibile selezionare un mezzo per stampare la relativa checklist. 
 
 ### Reintegri
@@ -120,7 +120,7 @@ Cliccando su reintegra un mezzo è possibile scegliere il veicolo e successivame
 ![Schermata per la selezione e conferma del prodotto](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/sceltaProdottoMobile.png)
 Terminata la lista dei materiali da ripristinare è possibile cliccare sul pulsante "Ho finito" per terminare l'operazione.
 ### Lista reintegri
-FOTO_LISTA_REINTEGRI
+![Schermata lista reintegri](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/listaReintegri.png)
 Dalla pagina della lista reintegri è possibile vedere ogni singolo evento con la relativa lista di articoli movimentati. 
 #### Classifica dei reintegri
 La classifica dei reintegri mostra in ordine decrescente gli utenti in base al numero di movimenti.
@@ -130,13 +130,11 @@ La classifica dei reintegri mostra in ordine decrescente gli utenti in base al n
 ![Schermata per l'invio del messaggio](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/invioMessaggio.png)
 Dalla web application mobile, tramite il menu di navigazione presente a fondo pagina, è possibile accedere alla pagina per poter inviare un messaggio ai magazzinieri. 
 #### Lista messaggi
-FOTO_LISTA_MESSAGGI
-
+![Schermata lista messaggi](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/listaMessaggi.png)
 La lista messaggi offre la possibilità di leggere le comunicazioni inviate da parte degli utenti.
 ### Notifiche
 #### Lista notifiche
-FOTO_LISTA_NOTIFICHE
-
+![Schermata lista notifiche](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/listaNotifiche.png)
 Da questa pagina è possibile vedere le segnalazioni di prodotti con quantità non corrispondenti. 
 
 ## Privacy - Sicurezza - GDPR
@@ -157,7 +155,7 @@ Per prevenire tentativi di attacco Brute Force è stato implementato un sistema 
 
 ---
 #### Blocco in tempo reale degli utenti
-FOTO_BADGE_BLOCCATO
+![Badge bloccato](https://raw.githubusercontent.com/RiccardoRiggi/NewReintegrApp/main/screenshots/badgeBloccato.png)
 In qualunque momento è possibile bloccare l'accesso all'applicazione da parte di un utente, se autenticato, verrà disconnesso automaticamente.
 
 ---
